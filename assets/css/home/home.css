@@ -183,4 +183,44 @@
 }
 #page-navbar .down-navbar ul li a:hover {
   color: #ff871d;
+}
+
+#main-slider .slider .sldr {
+  font-family: "Poppins", sans-serif;
+}
+#main-slider .slider .sldr h4 {
+  position: absolute;
+  display: inline-block;
+  font-size: 21px;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+  top: 100px;
+  right: 220px;
+}
+#main-slider .slider .sldr .heading {
+  font-family: "Heebo", sans-serif;
+  position: absolute;
+  display: inline-block;
+  font-size: 64px;
+  top: 140px;
+  right: 199px;
+  font-weight: bold;
+  letter-spacing: 0;
+}
+#main-slider .slider .sldr h2 {
+  font-family: "Heebo", sans-serif;
+  position: absolute;
+  display: inline-block;
+  font-size: 64px;
+  top: 210px;
+  right: 300px;
+}
+#main-slider .slider .sldr .slide-button {
+  position: absolute;
+  display: inline-block;
+  top: 65%;
+  right: 37%;
 }/*# sourceMappingURL=home.css.map */
