@@ -434,6 +434,123 @@
   letter-spacing: 0.3px;
   font-weight: 600;
 }
+#recent-arrivals .card {
+  border: none;
+  font-family: "Poppins", sans-serif;
+}
+#recent-arrivals .card .product-hover {
+  gap: 5px;
+  justify-content: center;
+}
+#recent-arrivals .card .product-hover button {
+  width: 35px;
+  height: 30px;
+  border: none;
+  background-color: white;
+}
+#recent-arrivals .card .product-hover button:hover {
+  color: white;
+  background-color: #ff871d;
+  transition: 0.5s;
+}
+#recent-arrivals .card .product-hover i {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 2px;
+}
+#recent-arrivals .card .star-product {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  gap: 5px;
+  margin-top: 7px;
+}
+#recent-arrivals .card .star-product .bi-star-fill {
+  color: #ff871d;
+}
+#recent-arrivals .card .produc-imgs {
+  position: relative;
+  overflow: hidden;
+}
+#recent-arrivals .card .produc-imgs .basic {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  left: 0;
+  transition: all 0.7s ease-in;
+}
+#recent-arrivals .card .card-body {
+  text-align: center;
+}
+#recent-arrivals .card .card-body a {
+  text-decoration: none;
+}
+#recent-arrivals .card .card-body a p {
+  color: rgba(22, 21, 21, 0.7294117647);
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+#recent-arrivals .card .card-body a p:hover {
+  color: #ff871d;
+}
+#recent-arrivals .card .card-body .price {
+  display: inline-block;
+  color: #ff871d;
+  font-weight: 700;
+  font-size: 16px;
+}
+#recent-arrivals .card .card-body del {
+  color: #666666;
+  font-size: 16px;
+  font-weight: 600;
+}
+#recent-arrivals .card .discount {
+  top: 10px;
+  display: block;
+  left: 10px;
+  position: absolute;
+  opacity: 1;
+  line-height: 23px;
+}
+#recent-arrivals .card .discount .badge {
+  border-radius: 0px;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 20px;
+  text-align: center;
+  background-color: #ff871d;
+  border-color: #ff871d;
+  color: white;
+  padding: 1px 5px;
+}
+#recent-arrivals .view-more {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  line-height: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+#recent-arrivals .view-more .button {
+  display: flex;
+  width: 210px;
+  height: 45px;
+  background-color: #ff871d;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+#recent-arrivals .view-more .button a {
+  text-decoration: none;
+  color: white;
+}
+#recent-arrivals .view-more .button:hover {
+  background-color: black;
+}
 
 .geeks {
   overflow: hidden;

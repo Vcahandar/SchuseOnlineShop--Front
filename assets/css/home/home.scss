@@ -480,7 +480,7 @@
             }
         }
 
-        .support{
+        .support {
             display: flex;
             width: 25%;
 
@@ -512,7 +512,7 @@
         }
 
 
-        .delivery{
+        .delivery {
 
             display: flex;
             width: 25%;
@@ -544,7 +544,7 @@
 
         }
 
-        .pig-bank{
+        .pig-bank {
             display: flex;
             width: 25%;
             align-items: center;
@@ -584,22 +584,180 @@
 }
 
 
-#recent-arrivals{
+#recent-arrivals {
 
-    .product-text{
+    .product-text {
         text-align: center;
         font-family: 'Poppins', sans-serif;
 
-        .title{
+        .title {
 
-            h2{
+            h2 {
                 letter-spacing: .3px;
                 font-weight: 600;
             }
 
-     
+
         }
 
+    }
+
+
+    .card {
+        border: none;
+
+        font-family: 'Poppins', sans-serif;
+
+        .product-hover {
+            gap: 5px;
+            justify-content: center;
+
+
+            button {
+                width: 35px;
+                height: 30px;
+                border: none;
+                background-color: white;
+
+            }
+
+            button:hover {
+                color: white;
+                background-color: #ff871d;
+                transition: 0.5s;
+            }
+
+            i {
+                font-size: 18px;
+                text-align: center;
+                margin-top: 2px;
+            }
+        }
+
+        .star-product {
+            display: flex;
+            justify-content: center;
+            font-size: 12px;
+            gap: 5px;
+            margin-top: 7px;
+
+            .bi-star-fill {
+                color: #ff871d;
+            }
+        }
+
+        .produc-imgs {
+            position: relative;
+            overflow: hidden;
+
+            .basic {
+                position: absolute;
+                object-fit: cover;
+                top: 0;
+                left: 0;
+                transition: all 0.7s ease-in;
+            }
+        }
+
+
+
+
+
+        .card-body {
+            text-align: center;
+
+            a {
+                text-decoration: none;
+
+                p {
+                    color: #161515ba;
+                    letter-spacing: .5px;
+                    text-transform: capitalize;
+                    font-weight: 600;
+
+
+                }
+
+                p:hover {
+                    color: #ff871d;
+                }
+            }
+
+            .price {
+                display: inline-block;
+                color: #ff871d;
+                font-weight: 700;
+                font-size: 16px;
+            }
+
+
+
+
+
+            del {
+                color: #666666;
+                font-size: 16px;
+                font-weight: 600;
+            }
+
+
+        }
+
+        .discount {
+            top: 10px;
+            display: block;
+            left: 10px;
+            position: absolute;
+            opacity: 1;
+            line-height: 23px;
+
+            .badge {
+                border-radius: 0px;
+
+                display: inline-block;
+                font-size: 11px;
+                line-height: 20px;
+                text-align: center;
+                background-color: #ff871d;
+                border-color: #ff871d;
+                color: white;
+                padding: 1px 5px;
+            }
+        }
+    }
+
+
+    .view-more {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        font-size: 15px;
+        letter-spacing: .5px;
+        line-height: 22px;
+        font-weight: 500;
+        text-transform: uppercase;
+
+        .button {
+            display: flex;
+            width: 210px;
+            height: 45px;
+            background-color: #ff871d;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+
+          
+        
+        }
+
+        .button:hover{
+            background-color: black;
+        }
     }
 }
 
