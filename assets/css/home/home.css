@@ -473,12 +473,28 @@
   overflow: hidden;
 }
 #recent-arrivals .card .produc-imgs .basic {
+  width: 100%;
+  transition: all 1.5s cubic-bezier(0, 0, 0.05, 1);
+}
+#recent-arrivals .card .produc-imgs .top {
   position: absolute;
-  -o-object-fit: cover;
-     object-fit: cover;
   top: 0;
   left: 0;
-  transition: all 0.7s ease-in;
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  transition: 0.25s opacity, 0.25s visibility, transform 1.5s cubic-bezier(0, 0, 0.2, 1);
+}
+#recent-arrivals .card:hover {
+  border-color: rgba(102, 190, 149, 0.5215686275);
+}
+#recent-arrivals .card:hover .produc-imgs .basic {
+  transform: scale3d(1.05, 1.05, 1.05) translateZ(0);
+}
+#recent-arrivals .card:hover .produc-imgs .top {
+  opacity: 1;
+  visibility: visible;
+  transform: scale3d(1.05, 1.05, 1.05) translateZ(0);
 }
 #recent-arrivals .card .card-body {
   text-align: center;

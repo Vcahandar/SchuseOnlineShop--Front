@@ -651,13 +651,37 @@
             overflow: hidden;
 
             .basic {
-                position: absolute;
-                object-fit: cover;
+                width: 100%;
+                transition: all 1.5s cubic-bezier(0, 0, 0.05, 1);
+            }
+
+            .top{
+                position:absolute;
                 top: 0;
                 left: 0;
-                transition: all 0.7s ease-in;
+                opacity: 0;
+                visibility: hidden;
+                width: 100%;
+                transition: 0.25s opacity, 0.25s visibility, transform 1.5s cubic-bezier(0, 0, 0.2, 1);
             }
         }
+        &:hover {
+            border-color: #66be9585;
+            // transition: .5s;
+            .produc-imgs{
+              
+                .basic {
+                  transform: scale3d(1.05, 1.05, 1.05) translateZ(0);
+                }
+                .top {
+                  opacity: 1;
+                  visibility: visible;
+                  transform: scale3d(1.05, 1.05, 1.05) translateZ(0);
+                }
+            
+            }
+  
+          }
 
 
 
