@@ -218,9 +218,233 @@
   top: 210px;
   right: 300px;
 }
-#main-slider .slider .sldr .slide-button {
+#main-slider .slider .sldr .shopNow-btn {
   position: absolute;
   display: inline-block;
   top: 65%;
-  right: 37%;
+  right: 35%;
+  outline: none;
+  border-radius: 5%;
+  width: 130px;
+  height: 40px;
+  background-color: #ff871d;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  border: none;
+}
+
+#shopify-section .container {
+  max-width: 1220px !important;
+}
+#shopify-section .banner-man {
+  width: 100%;
+  position: relative;
+}
+#shopify-section .banner-man .banner-description {
+  position: absolute;
+  background-color: white;
+  width: auto;
+  bottom: 5%;
+  padding: 30px 101px;
+  text-align: center;
+  left: 10%;
+  font-family: "Poppins", sans-serif;
+}
+#shopify-section .banner-man .banner-description .title {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+#shopify-section .banner-man .banner-description .text-button {
+  margin-top: 11px;
+  float: none;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  width: 100%;
+}
+#shopify-section .banner-man .banner-description .text-button a {
+  text-decoration: none;
+  background-color: transparent;
+  padding: 0;
+  color: #ff871d;
+  font-weight: 700;
+  line-height: 20px;
+  border-bottom: 1px solid #ff871d;
+  border-radius: 0;
+  font-size: 17px;
+}
+#shopify-section .banner-women {
+  width: 100%;
+  position: relative;
+}
+#shopify-section .banner-women .banner-description {
+  position: absolute;
+  background-color: white;
+  width: auto;
+  bottom: 5%;
+  padding: 30px 101px;
+  text-align: center;
+  left: 10%;
+  font-family: "Poppins", sans-serif;
+}
+#shopify-section .banner-women .banner-description .title {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+#shopify-section .banner-women .banner-description .text-button {
+  margin-top: 11px;
+  float: none;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  width: 100%;
+}
+#shopify-section .banner-women .banner-description .text-button a {
+  text-decoration: none;
+  background-color: transparent;
+  padding: 0;
+  color: #ff871d;
+  font-weight: 700;
+  line-height: 20px;
+  border-bottom: 1px solid #ff871d;
+  border-radius: 0;
+  font-size: 17px;
+}
+
+#services-wrapper .container {
+  max-width: 1220px !important;
+}
+#services-wrapper .service {
+  height: 122px;
+  border: 2px solid #ff871d;
+  padding: 40px;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+}
+#services-wrapper .service .free-srvce {
+  display: flex;
+  width: 25%;
+}
+#services-wrapper .service .free-srvce i {
+  margin-right: 12px;
+  font-size: 35px;
+}
+#services-wrapper .service .free-srvce .service-description {
+  line-height: 0.5;
+}
+#services-wrapper .service .free-srvce .service-description .title {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+}
+#services-wrapper .service .free-srvce .service-description .dscrptn {
+  color: #666666;
+  text-transform: capitalize;
+  float: left;
+  font-size: 16px;
+  font-weight: 400;
+}
+#services-wrapper .service .support {
+  display: flex;
+  width: 25%;
+}
+#services-wrapper .service .support i {
+  margin-right: 12px;
+  font-size: 35px;
+}
+#services-wrapper .service .support .service-description {
+  line-height: 0.5;
+}
+#services-wrapper .service .support .service-description .title {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+}
+#services-wrapper .service .support .service-description .dscrptn {
+  color: #666666;
+  text-transform: capitalize;
+  float: left;
+  font-size: 16px;
+  font-weight: 400;
+}
+#services-wrapper .service .delivery {
+  display: flex;
+  width: 25%;
+}
+#services-wrapper .service .delivery i {
+  margin-right: 12px;
+  font-size: 35px;
+}
+#services-wrapper .service .delivery .service-description {
+  line-height: 0.5;
+}
+#services-wrapper .service .delivery .service-description .title {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+}
+#services-wrapper .service .delivery .service-description .dscrptn {
+  color: #666666;
+  text-transform: capitalize;
+  float: left;
+  font-size: 16px;
+  font-weight: 400;
+}
+#services-wrapper .service .pig-bank {
+  display: flex;
+  width: 25%;
+  align-items: center;
+}
+#services-wrapper .service .pig-bank i {
+  margin-right: 12px;
+  font-size: 35px;
+}
+#services-wrapper .service .pig-bank .service-description {
+  line-height: 0.5;
+  margin-top: 10px;
+}
+#services-wrapper .service .pig-bank .service-description .title {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+}
+#services-wrapper .service .pig-bank .service-description .dscrptn {
+  color: #666666;
+  text-transform: capitalize;
+  float: left;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#recent-arrivals .product-text {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+#recent-arrivals .product-text .title h2 {
+  letter-spacing: 0.3px;
+  font-weight: 600;
+}
+
+.geeks {
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.geeks img {
+  width: 100%;
+  transition: 1.5s all ease;
+}
+
+.geeks:hover img {
+  transform: scale(1.05);
 }/*# sourceMappingURL=home.css.map */

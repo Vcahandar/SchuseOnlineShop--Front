@@ -15,7 +15,6 @@
 
     .container {
         max-width: 1220px !important;
-
     }
 
 
@@ -304,11 +303,20 @@
             }
 
 
-            .slide-button {
+            .shopNow-btn {
                 position: absolute;
                 display: inline-block;
                 top: 65%;
-                right: 37%;
+                right: 35%;
+                outline: none;
+                border-radius: 5%;
+                width: 130px;
+                height: 40px;
+                background-color: #ff871d;
+                font-size: 14px;
+                font-weight: 600;
+                color: white;
+                border: none;
 
             }
 
@@ -317,4 +325,309 @@
 
         }
     }
+}
+
+
+
+#shopify-section {
+
+    .container {
+        max-width: 1220px !important;
+    }
+
+    .banner-man {
+        width: 100%;
+        position: relative;
+
+        .banner-description {
+            position: absolute;
+            background-color: white;
+            width: auto;
+            bottom: 5%;
+            padding: 30px 101px;
+            text-align: center;
+            left: 10%;
+            font-family: 'Poppins', sans-serif;
+
+            .title {
+                font-size: 30px;
+                line-height: 30px;
+                font-weight: 700;
+                text-align: center;
+            }
+
+            .text-button {
+                margin-top: 11px;
+                float: none;
+                display: inline-block;
+                vertical-align: top;
+                text-align: center;
+                width: 100%;
+
+                a {
+                    text-decoration: none;
+                    background-color: transparent;
+                    padding: 0;
+                    color: #ff871d;
+                    font-weight: 700;
+                    line-height: 20px;
+                    border-bottom: 1px solid #ff871d;
+                    border-radius: 0;
+                    font-size: 17px;
+                }
+            }
+
+        }
+
+
+
+    }
+
+    .banner-women {
+        width: 100%;
+        position: relative;
+
+        .banner-description {
+            position: absolute;
+            background-color: white;
+            width: auto;
+            bottom: 5%;
+            padding: 30px 101px;
+            text-align: center;
+            left: 10%;
+            font-family: 'Poppins', sans-serif;
+
+
+
+
+            .title {
+                font-size: 30px;
+                line-height: 30px;
+                font-weight: 700;
+                text-align: center;
+            }
+
+            .text-button {
+                margin-top: 11px;
+                float: none;
+                display: inline-block;
+                vertical-align: top;
+                text-align: center;
+                width: 100%;
+
+                a {
+                    text-decoration: none;
+                    background-color: transparent;
+                    padding: 0;
+                    color: #ff871d;
+                    font-weight: 700;
+                    line-height: 20px;
+                    border-bottom: 1px solid #ff871d;
+                    border-radius: 0;
+                    font-size: 17px;
+                }
+            }
+
+        }
+
+    }
+
+
+}
+
+
+
+#services-wrapper {
+
+    .container {
+        max-width: 1220px !important;
+    }
+
+    .service {
+        height: 122px;
+        border: 2px solid #ff871d;
+        padding: 40px;
+        display: flex;
+        font-family: 'Poppins', sans-serif;
+        align-items: center;
+
+        .free-srvce {
+            display: flex;
+            width: 25%;
+
+            i {
+                margin-right: 12px;
+                font-size: 35px;
+            }
+
+            .service-description {
+                line-height: 0.5;
+
+                .title {
+                    font-size: 16px;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    letter-spacing: .5px;
+                }
+
+                .dscrptn {
+                    color: #666666;
+                    text-transform: capitalize;
+                    float: left;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .support{
+            display: flex;
+            width: 25%;
+
+            i {
+                margin-right: 12px;
+                font-size: 35px;
+            }
+
+            .service-description {
+                line-height: 0.5;
+
+                .title {
+                    font-size: 16px;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    letter-spacing: .5px;
+                }
+
+                .dscrptn {
+                    color: #666666;
+                    text-transform: capitalize;
+                    float: left;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+
+
+        }
+
+
+        .delivery{
+
+            display: flex;
+            width: 25%;
+
+            i {
+                margin-right: 12px;
+                font-size: 35px;
+            }
+
+            .service-description {
+                line-height: 0.5;
+
+                .title {
+                    font-size: 16px;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    letter-spacing: .5px;
+                }
+
+                .dscrptn {
+                    color: #666666;
+                    text-transform: capitalize;
+                    float: left;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+
+
+        }
+
+        .pig-bank{
+            display: flex;
+            width: 25%;
+            align-items: center;
+
+
+            i {
+                margin-right: 12px;
+                font-size: 35px;
+            }
+
+            .service-description {
+                line-height: 0.5;
+                margin-top: 10px;
+
+
+                .title {
+                    font-size: 16px;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    letter-spacing: .5px;
+                }
+
+                .dscrptn {
+                    color: #666666;
+                    text-transform: capitalize;
+                    float: left;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+
+        }
+
+
+
+    }
+}
+
+
+#recent-arrivals{
+
+    .product-text{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+
+        .title{
+
+            h2{
+                letter-spacing: .3px;
+                font-weight: 600;
+            }
+
+     
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.geeks {
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.geeks img {
+    width: 100%;
+    transition: 1.5s all ease;
+}
+
+.geeks:hover img {
+    transform: scale(1.05);
 }
