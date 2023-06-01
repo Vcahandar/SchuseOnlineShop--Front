@@ -838,6 +838,8 @@
         .card {
             border: none;
             font-family: 'Poppins', sans-serif;
+            width: 25rem !important;
+
 
             &:hover .product-hover {
                 opacity: 1;

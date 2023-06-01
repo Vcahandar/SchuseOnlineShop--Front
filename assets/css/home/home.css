@@ -596,6 +596,7 @@
 #trending-product .slider .card {
   border: none;
   font-family: "Poppins", sans-serif;
+  width: 25rem !important;
 }
 #trending-product .slider .card:hover .product-hover {
   opacity: 1;
@@ -705,6 +706,7 @@
   padding: 1px 5px;
 }
 #trending-product .slider__container {
+  cursor: -webkit-grab;
   cursor: grab;
   display: flex;
   overflow: hidden;
@@ -712,6 +714,7 @@
 }
 #trending-product .slider__container.dragging {
   scroll-behavior: auto;
+  cursor: -webkit-grabbing;
   cursor: grabbing;
 }
 #trending-product .slider__item {
@@ -726,6 +729,7 @@
   -o-user-drag: none;
   -webkit-user-select: none;
      -moz-user-select: none;
+      -ms-user-select: none;
           user-select: none;
 }
 #trending-product .slider__container[data-step="4"] .slider__item {
@@ -939,6 +943,7 @@
   box-sizing: border-box;
   -webkit-user-select: none;
   -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
   -webkit-touch-callout: none;
   -khtml-user-select: none;
