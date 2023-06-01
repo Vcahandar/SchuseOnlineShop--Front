@@ -438,6 +438,7 @@
 #recent-arrivals .card {
   border: none;
   font-family: "Poppins", sans-serif;
+  width: 100% !important;
 }
 #recent-arrivals .card:hover .product-hover {
   opacity: 1;

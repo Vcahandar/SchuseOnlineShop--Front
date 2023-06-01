@@ -603,6 +603,8 @@
     .card {
         border: none;
         font-family: 'Poppins', sans-serif;
+        width: 100% !important;
+
 
         &:hover .product-hover {
             opacity: 1;
