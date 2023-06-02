@@ -108,3 +108,81 @@ $(document).ready(function () {
   });
 });
 
+
+
+//--------Modul START-----------------
+
+
+let icons = document.querySelectorAll(".card .product-hover  .fa-eye");
+
+let cards = document.querySelectorAll(".card");
+
+let modal = document.querySelector("#recent-arrivals .mini-modal .product-modal");
+
+let modalImg = document.querySelector("#recent-arrivals .mini-modal .product-modal .img img")
+
+for (const icon of icons) {
+  icon.addEventListener("click", function () {
+
+    document.querySelector(".mini-modal").style.display = "block"
+    document.querySelector(".product-modal").classList.remove("d-none")
+    document.querySelector(".mini-modal").classList.remove("d-none")
+    document.querySelector("#overlay").style.display = "block";
+    document.body.style.overflow = "hidden"
+
+    let prodImg = this.parentNode.parentNode.parentNode.firstElementChild.firstElementChild.getAttribute("src");
+
+    let prodName = this.parentNode.parentNode.nextElementSibling.nextElementSibling.firstElementChild.firstElementChild.innerText;
+    let prodPrice = this.parentNode.parentNode.nextElementSibling.nextElementSibling.children[1].innerText;
+
+    
+    document.querySelector(".product-modal .img img").setAttribute("src", prodImg);
+
+
+     document.querySelector(".prod-tittle h2").innerText = prodName;
+     document.querySelector(".price-discount .discount del").innerText = prodPrice * 2;
+     document.querySelector(".price-discount  .pro-price p").innerText = prodPrice;
+
+  })
+}
+
+
+let iconDelete = document.querySelector(".product-modal .delete-icon a i");
+iconDelete.addEventListener("click", function (e) {
+  e.preventDefault();
+  document.querySelector(".mini-modal").classList.add("d-none")
+  document.querySelector(".product-modal").classList.add("d-none")
+  document.querySelector("#overlay").style.display = "none";
+  document.body.style.overflow = "unset"
+})
+
+window.addEventListener("click", function (e) {
+  if (e.target == document.querySelector(".mini-modal")) {
+    document.querySelector(".mini-modal").classList.add("d-none")
+    document.querySelector(".product-modal").classList.add("d-none");
+    document.querySelector("#overlay").style.display = "none";
+    this.document.body.style.overflow = "unset"
+  }
+})
+
+
+
+$(document).ready(function () {
+  $('.minus').click(function () {
+    var $input = $(this).parent().find('input');
+    var count = parseInt($input.val()) - 1;
+    count = count < 1 ? 1 : count;
+    $input.val(count);
+    $input.change();
+    return false;
+  });
+  $('.plus').click(function () {
+    var $input = $(this).parent().find('input');
+    $input.val(parseInt($input.val()) + 1);
+    $input.change();
+    return false;
+  });
+});
+
+
+// --------------- Modul END --------------------

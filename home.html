@@ -20,6 +20,8 @@
 </head>
 
 <body>
+
+    <div id="overlay"></div>
     <header>
         <section id="page-navbar">
             <div class="up-navbar">
@@ -263,7 +265,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card" data-id="1" style="width: 18rem;">
                             <div class="produc-imgs">
                                 <img src="./assets/img/home/product1-1.webp" class="card-img-top basic" alt="...">
                                 <img src="./assets/img/home/product1-1.webp" class="card-img-top top" alt="...">
@@ -295,14 +297,14 @@
                                     <p>Wild Taps Sneakers</p>
                                 </a>
 
-                                <p class="card-text price">$90.00</p>
+                                <p class="card-text price"> <span>$</span>90.00</p>
                                 <del>$97.00</del>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card" data-d="2" style="width: 18rem;">
                             <div class="produc-imgs">
                                 <img cla src="./assets/img/home/product2-1.webp" class="card-img-top basic" alt="...">
                                 <img src="./assets/img/home/product2-1.webp" class="card-img-top top" alt="...">
@@ -571,14 +573,114 @@
 
                 </div>
 
-                <div class="view-more">
-                    <div class="button">
-                        <a href="">View all products</a>
+                <div class="mini-modal">
+                    <div class="product-modal d-none">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="img">
+                                        <img src="" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="delete-icon">
+                                        <a href=""><i class="fa-solid fa-xmark"></i></a>
+                                    </div>
+                                    <div class="prod-tittle">
+                                        <h2>Wild Taps Sneakers</h2>
+
+                                    </div>
+                                    <div class="price-discount">
+                                        <div class="discount">
+                                            <del></del>
+                                        </div>
+                                        <div class="pro-price">
+                                            <p></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="border">
+
+                                    </div>
+                                    <div class="text3">
+                                        <p></p>
+                                    </div>
+                                    <div class="pro-description">
+                                        <p>Stylish and comfortable this printed chemise is designed with short sleeves
+                                            and a round neckline. Elegant and comfy, this embroidered
+                                            A-line dress which has a round neck, and three-</p>
+                                    </div>
+
+                                    <div class="pro-category">
+                                        <div class="category-name">
+                                            <span class="type">Type</span>
+                                            <span class="type-name">
+                                                : sandal
+                                            </span>
+                                        </div>
+
+                                        <div class="category-name">
+                                            <span class="type">Vendor</span>
+                                            <span class="type-name">
+                                                : Nike
+                                            </span>
+                                        </div>
+                                        <div class="category-name">
+                                            <span class="type">SKU</span>
+                                            <span class="type-name">
+                                                : AP-888
+                                            </span>
+                                        </div>
+
+                                        <div class="category-name">
+                                            <span class="type">Size</span>
+                                            <select id="size">
+                                                <option value="S">S</option>
+                                                <option value="L">L</option>
+                                                <option value="M">M</option>
+                                            </select>
+
+                                        </div>
+
+                                        <div class="category-name">
+                                            <span class="type">Color</span>
+                                            <select id="size">
+                                                <option value="White">White</option>
+                                                <option value="Black">Black</option>
+                                                <option value="Pink">Pink</option>
+                                            </select>
+
+                                        </div>
+                                        <div class="input-icon">
+                                            <div class="inputs">
+                                                <div class="number">
+                                                    <span class="minus">-</span>
+                                                    <input type="text" value="1" />
+                                                    <span class="plus">+</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="box">
+                                            <button class="button">
+                                                <span>Add To Cart</span>
+                                            </button>
+                                      </div>
+
+                                      <div class="prod-detail">
+                                        <a href="">View Full Product Details</a>
+                                      </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
 
-                </div>
 
-            </div>
+                </div>
 
         </section>
 
