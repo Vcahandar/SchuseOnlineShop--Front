@@ -208,6 +208,15 @@
 #page-navbar .down-navbar ul li a:hover {
   color: #ff871d;
 }
+#page-navbar .stick-nav {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+  background-color: #fff;
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
+  animation: 900ms cubic-bezier(0.2, 1, 0.22, 1) 0s normal none 1 running fadeInDown;
+}
 
 #main-slider .slider .sldr {
   font-family: "Poppins", sans-serif;

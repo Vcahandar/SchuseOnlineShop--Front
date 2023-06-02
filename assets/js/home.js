@@ -134,14 +134,15 @@ for (const icon of icons) {
 
     let prodName = this.parentNode.parentNode.nextElementSibling.nextElementSibling.firstElementChild.firstElementChild.innerText;
     let prodPrice = this.parentNode.parentNode.nextElementSibling.nextElementSibling.children[1].innerText;
+    let proDiscount = this.parentNode.parentNode.nextElementSibling.nextElementSibling.lastElementChild.innerText;
 
-    
+
     document.querySelector(".product-modal .img img").setAttribute("src", prodImg);
 
 
-     document.querySelector(".prod-tittle h2").innerText = prodName;
-     document.querySelector(".price-discount .discount del").innerText = prodPrice * 2;
-     document.querySelector(".price-discount  .pro-price p").innerText = prodPrice;
+    document.querySelector(".prod-tittle h2").innerText = prodName;
+    document.querySelector(".price-discount .discount del").innerText = proDiscount;
+    document.querySelector(".price-discount  .pro-price p").innerText = prodPrice;
 
   })
 }
@@ -183,6 +184,26 @@ $(document).ready(function () {
     return false;
   });
 });
+
+$(function(){
+  "use strict";
+
+  // Sticky menu 
+  var $window = $(window);
+  $window.on('scroll', function () {
+    var scroll = window.scrollY;
+    if (scroll < 200) {
+      $(".down-navbar").removeClass("stick-nav");
+    } else {
+      $(".down-navbar").addClass("stick-nav");
+    }
+  });
+
+
+})
+
+
+
 
 
 // --------------- Modul END --------------------
