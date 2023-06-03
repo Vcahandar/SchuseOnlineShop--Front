@@ -209,13 +209,189 @@
   color: #ff871d;
 }
 #page-navbar .stick-nav {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
   top: 0;
   position: fixed;
   width: 100%;
   z-index: 9;
   background-color: #fff;
-  box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
   animation: 900ms cubic-bezier(0.2, 1, 0.22, 1) 0s normal none 1 running fadeInDown;
+}
+
+#mobil-navbar {
+  font-family: "Poppins", sans-serif;
+}
+#mobil-navbar .up {
+  border-bottom: 1px solid lightgray;
+}
+#mobil-navbar .mobil-up-navbar {
+  padding: 11px 0px 11px 7px;
+  width: 100%;
+}
+#mobil-navbar .mobil-up-navbar .dropdown-menu {
+  --bs-dropdown-link-hover-bg: white;
+  --bs-dropdown-link-active-bg: orange;
+}
+#mobil-navbar .mobil-up-navbar .dropdown-menu :hover {
+  color: #ff871d;
+}
+#mobil-navbar .mobil-up-navbar .dropdown {
+  display: flex;
+  margin-left: 10px;
+  gap: 10px;
+  padding-top: 10px;
+  color: #666666;
+  font-size: 14px;
+  font-weight: 400;
+}
+#mobil-navbar .mobil-up-navbar .dropdown .basic :hover {
+  color: #ff871d;
+}
+#mobil-navbar .mobil-up-navbar .dropdown .line {
+  margin-left: 8px;
+  height: 22px;
+  color: black;
+  width: 1px;
+  background: rgba(128, 128, 128, 0.4588235294);
+  margin-top: 1px;
+}
+#mobil-navbar .mobil-up-navbar .dropdown .show {
+  font-size: 14px;
+}
+#mobil-navbar .mobil-down-navbar {
+  margin-left: 73px;
+  display: flex;
+  align-items: center;
+  margin-top: 13px;
+  gap: 7px;
+}
+#mobil-navbar .mobil-down-navbar .account-mob-icon {
+  font-size: 24px;
+}
+#mobil-navbar .mobil-down-navbar .line {
+  margin-left: 8px;
+  height: 22px;
+  color: black;
+  width: 1px;
+  background: rgba(128, 128, 128, 0.4588235294);
+  margin-top: 1px;
+}
+#mobil-navbar .mobil-down-navbar .basket-mob-icon {
+  font-size: 22px;
+  display: flex;
+}
+#mobil-navbar .mobil-down-navbar .basket-mob-icon .basket-count {
+  font-size: 11px;
+  width: 13px;
+  height: 15px;
+  background: #ff871d;
+  text-align: center;
+  border-radius: 50%;
+  margin-top: 4px;
+  margin-left: 5px;
+}
+#mobil-navbar .mobil-down-navbar .basket-mob-icon .basket-count span {
+  font-weight: 600;
+  color: white;
+}
+#mobil-navbar .down {
+  height: 66px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px 0 10px;
+}
+#mobil-navbar .down .sidebar-mob-navbar {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+#mobil-navbar .down .sidebar-mob-navbar .hamburger-icon {
+  font-size: 22px;
+}
+#mobil-navbar .down .sidebar-mob-navbar .nav-logo {
+  margin-left: 25px;
+  width: 101px;
+}
+#mobil-navbar .down .sidebar-mob-navbar .nav-logo img {
+  width: 100%;
+}
+#mobil-navbar .down .sidebar-mob-navbar .search-mob-icon .searchBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background: #2f3640;
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px;
+}
+#mobil-navbar .down .sidebar-mob-navbar .search-mob-icon .searchBox:hover > .searchInput {
+  width: 240px;
+  padding: 0 6px;
+}
+#mobil-navbar .down .sidebar-mob-navbar .search-mob-icon .searchBox:hover > .searchButton {
+  background: white;
+  color: #2f3640;
+}
+#mobil-navbar .down .sidebar-mob-navbar .search-mob-icon .searchButton {
+  color: white;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #2f3640;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+#mobil-navbar .down .sidebar-mob-navbar .search-mob-icon .searchInput {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+}
+@media screen and (max-width: 620px) {
+  #mobil-navbar .down .sidebar-mob-navbar .search-mob-icon .searchBox:hover > .searchInput {
+    width: 150px;
+    padding: 0 6px;
+  }
+}
+#mobil-navbar .down .content-area {
+  overflow-y: scroll;
+  background-color: #fff;
+  z-index: 9999;
+  width: 0%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  transition: 0.4s;
+  overflow-y: scroll;
+}
+#mobil-navbar .down .content-area .iconx {
+  font-size: 25px;
+  float: right;
+  margin-right: 20px;
+  margin-top: 22px;
+}
+#mobil-navbar .down .content-area .content-area-center {
+  margin-top: 65px;
+}
+#mobil-navbar .down .content-area .content-area-center li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+#mobil-navbar .down .content-area .content-area-center li a {
+  text-decoration: none;
+  color: rgba(56, 53, 53, 0.9333333333);
+  font-size: 20px;
 }
 
 #main-slider .slider .sldr {
@@ -265,6 +441,62 @@
   font-weight: 600;
   color: white;
   border: none;
+}
+@media only screen and (max-width: 850px) and (min-width: 350px) {
+  #main-slider body {
+    width: 100%;
+  }
+  #main-slider h4 {
+    display: none !important;
+  }
+  #main-slider .heading {
+    font-size: 21px !important;
+    position: absolute !important;
+    top: 1% !important;
+    right: 7% !important;
+  }
+  #main-slider .desc {
+    position: absolute !important;
+    top: 18% !important;
+    font-size: 25px !important;
+    right: 11% !important;
+  }
+  #main-slider .shopNow-btn {
+    position: absolute !important;
+    top: 62% !important;
+    right: 21% !important;
+    width: 81px !important;
+    font-size: 10px !important;
+    height: 25px !important;
+  }
+}
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  #main-slider body {
+    width: 100%;
+  }
+  #main-slider h4 {
+    display: none !important;
+  }
+  #main-slider .heading {
+    font-size: 22px !important;
+    position: absolute !important;
+    top: 7% !important;
+    right: 15% !important;
+  }
+  #main-slider .desc {
+    position: absolute !important;
+    top: 18% !important;
+    font-size: 25px !important;
+    right: 17% !important;
+  }
+  #main-slider button {
+    position: absolute !important;
+    top: 50% !important;
+    right: 21% !important;
+    width: 99px !important;
+    font-size: 12px !important;
+    height: 30px !important;
+  }
 }
 
 #shopify-section .container {
@@ -1089,11 +1321,10 @@
 #newsletter .subscribe {
   height: 122px;
   border: 2px solid #ff871d;
-  padding: 33px 24px 28px;
   display: flex;
   font-family: "Poppins", sans-serif;
   align-items: center;
-  gap: 80px;
+  justify-content: space-around;
 }
 #newsletter .subscribe .newsletter-wrapper {
   gap: 70px;
@@ -1140,6 +1371,24 @@
 }
 #newsletter .subscribe .news-input button:hover {
   background-color: #222222;
+}
+@media only screen and (max-width: 850px) and (min-width: 350px) {
+  #newsletter .subscribe {
+    height: 290px;
+    display: block;
+  }
+  #newsletter .subscribe .newsletter-wrapper {
+    display: block;
+    padding: 33px 24px 28px;
+    text-align: center;
+  }
+  #newsletter .subscribe .news-input {
+    width: 90%;
+    margin-left: 22px;
+  }
+  #newsletter .subscribe .news-input input {
+    height: 44px;
+  }
 }
 
 #brand {
@@ -1297,4 +1546,61 @@ footer .footer-content .info ul li a:hover {
 
 .geeks:hover img {
   transform: scale(1.05);
+}
+
+@media only screen and (max-width: 850px) and (min-width: 350px) {
+  #shopify-section .banner-description {
+    position: absolute;
+    left: 25px;
+    right: 25px;
+    padding: 20px 0 !important;
+  }
+  #shopify-section .title {
+    font-size: 21px !important;
+  }
+  #shopify-section .text-button {
+    margin-top: 0 !important;
+    font-size: 13px;
+  }
+  #services-wrapper .service {
+    padding: 40px 10px;
+    height: 490px;
+    display: block;
+    text-align: center;
+  }
+  #services-wrapper .service .free-srvce {
+    display: block;
+    width: auto;
+    margin-bottom: 34px;
+  }
+  #services-wrapper .service .service-description {
+    margin-top: 18px;
+  }
+  #services-wrapper .service .service-description .title {
+    font-size: 14px !important;
+  }
+  #services-wrapper .service .service-description .dscrptn {
+    float: initial !important;
+  }
+  #services-wrapper .service .support {
+    display: block;
+    width: auto;
+    margin-bottom: 34px;
+  }
+  #services-wrapper .service .delivery {
+    display: block;
+    width: auto;
+    margin-bottom: 34px;
+  }
+  #services-wrapper .service .pig-bank {
+    display: block;
+    width: auto;
+    margin-bottom: 34px;
+  }
+  #trending-product .slider__item .card {
+    width: 35rem !important;
+  }
+  #trending-product .slider__item .card .fa-eye {
+    display: none;
+  }
 }/*# sourceMappingURL=home.css.map */

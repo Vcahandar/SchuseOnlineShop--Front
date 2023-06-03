@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 
     <link rel="stylesheet" href="./assets/css/home/home.css">
@@ -23,7 +24,7 @@
 
     <div id="overlay"></div>
     <header>
-        <section id="page-navbar">
+        <section id="page-navbar" class="d-lg-block d-none">
             <div class="up-navbar">
                 <div class="container">
                     <div class="row">
@@ -135,6 +136,126 @@
                 </ul>
             </div>
         </section>
+        <section id="mobil-navbar" class="d-lg-none d-block">
+
+            <div class="up">
+                <div class="nvb d-flex">
+                    <div class="col-6">
+                        <div class="mobil-up-navbar">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle language basic" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span> English</span>
+                                </a>
+                                <ul class="dropdown-menu language">
+                                    <li><a class="dropdown-item eng" href="#"><span>English</span></a></li>
+                                    <li><a class="dropdown-item grm" href="#"><span> Germany</span></a>
+                                    </li>
+                                    <li><a class="dropdown-item fr" href="#"><span> France</span></a></li>
+
+                                </ul>
+                                <div class="line"></div>
+
+                                <a class="nav-link dropdown-toggle usd basic" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span>USD $</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item usd-frst " href="#"><span>United States (USD
+                                                $)</span></a>
+                                    </li>
+                                    <li><a class="dropdown-item eur" href="#"><span>Europe (EUR €)</span></a></li>
+                                </ul>
+
+                            </li>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="mobil-down-navbar">
+                            <div class="account-mob-icon">
+                                <i class="fa-regular fa-user"></i>
+                            </div>
+                            <div class="line"></div>
+                            <div class="basket-mob-icon">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                                <div class="basket-count">
+                                    <span>0</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="down">
+
+                <div class="sidebar-mob-navbar">
+                    <div class="hamburger-icon">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="nav-logo">
+                        <img src="./assets/img/home/logo_200x.webp" alt="">
+                    </div>
+
+                    <div class="search-mob-icon">
+                        <!-- <div class="search-box">
+                            <input type="text" placeholder="Search here"/>
+                            <button type="submit">
+                              <i class="bx bx-search search-icon"></i>
+                            </button>
+                          </div>    -->
+
+                        <!-- <input type="text" placeholder="Search here"/>
+                          <button type="submit">
+                            <i class="bx bx-search search-icon"></i>
+                          </button> -->
+
+
+                        <div class="searchBox">
+
+                            <input class="searchInput" type="text" name="" placeholder="Search">
+                            <button class="searchButton" href="#">
+                                <i class="material-icons bx bx-search search-icon">
+                                    search
+                                </i>
+                            </button>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="content-area">
+                    <i class="fa-solid fa-xmark iconx"></i>
+                    <div class="content-area-center">
+                        <ul>
+                            <li>
+                                <a href="">Home</a>
+                            </li>
+                            <li>
+                                <a href="">Shoes</a>
+                            </li>
+                            <li>
+                                <a href="">Sport Shoes</a>
+                            </li>
+                            <li>
+                                <a href="">Dance Shoes</a>
+                            </li>
+                            <li>
+                                <a href="">Contact</a>
+                            </li>
+                            <li>
+                                <a href="">Blog</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>
 
     <main>
@@ -146,14 +267,14 @@
                             <img src="./assets/img/home/main-banner-1_2048x.webp" class="d-block w-100" alt="...">
                             <h4>THE SALE WILL TAKE PLACE THIS WEEK.</h4>
                             <h2 class="heading">Up To 50% Off</h2>
-                            <h2>First Order</h2>
+                            <h2 class="desc">First Order</h2>
                             <button type="submit" class="shopNow-btn">SHOP NOW</button>
                         </div>
                         <div class="carousel-item sldr">
                             <img src="./assets/img/home/main-banner-2_2048x.webp" class="d-block w-100" alt="...">
                             <h4>THE SALE WILL TAKE PLACE THIS WEEK.</h4>
                             <h2 class="heading">Up To 35% Off</h2>
-                            <h2>First Order</h2>
+                            <h2 class="desc">First Order</h2>
                             <button type="submit" class="shopNow-btn">SHOP NOW</button>
                         </div>
                     </div>
@@ -663,11 +784,11 @@
                                             <button class="button">
                                                 <span>Add To Cart</span>
                                             </button>
-                                      </div>
+                                        </div>
 
-                                      <div class="prod-detail">
-                                        <a href="">View Full Product Details</a>
-                                      </div>
+                                        <div class="prod-detail">
+                                            <a href="">View Full Product Details</a>
+                                        </div>
 
                                     </div>
                                 </div>
@@ -716,7 +837,7 @@
                                         <button type="submit">
                                             <i class="fa-regular fa-heart"></i>
                                         </button>
-                                        <button type="submit">
+                                        <button type="submit" class="d-lg-block d-none">
                                             <i class="fa-regular fa-eye"></i>
                                         </button>
                                         <button type="submit">
@@ -757,7 +878,7 @@
                                         <button type="submit">
                                             <i class="fa-regular fa-heart"></i>
                                         </button>
-                                        <button type="submit">
+                                        <button type="submit" class="d-lg-block d-none">
                                             <i class="fa-regular fa-eye"></i>
                                         </button>
                                         <button type="submit">
@@ -798,7 +919,7 @@
                                         <button type="submit">
                                             <i class="fa-regular fa-heart"></i>
                                         </button>
-                                        <button type="submit">
+                                        <button type="submit" class="d-lg-block d-none">
                                             <i class="fa-regular fa-eye"></i>
                                         </button>
                                         <button type="submit">
@@ -839,7 +960,7 @@
                                         <button type="submit">
                                             <i class="fa-regular fa-heart"></i>
                                         </button>
-                                        <button type="submit">
+                                        <button type="submit" class="d-lg-block d-none">
                                             <i class="fa-regular fa-eye"></i>
                                         </button>
                                         <button type="submit">
@@ -880,7 +1001,7 @@
                                         <button type="submit">
                                             <i class="fa-regular fa-heart"></i>
                                         </button>
-                                        <button type="submit">
+                                        <button type="submit" class="d-lg-block d-none">
                                             <i class="fa-regular fa-eye"></i>
                                         </button>
                                         <button type="submit">
@@ -921,7 +1042,7 @@
                                         <button type="submit">
                                             <i class="fa-regular fa-heart"></i>
                                         </button>
-                                        <button type="submit">
+                                        <button type="submit" class="d-lg-block d-none">
                                             <i class="fa-regular fa-eye"></i>
                                         </button>
                                         <button type="submit">
@@ -962,7 +1083,7 @@
                                         <button type="submit">
                                             <i class="fa-regular fa-heart"></i>
                                         </button>
-                                        <button type="submit">
+                                        <button type="submit" class="d-lg-block d-none">
                                             <i class="fa-regular fa-eye"></i>
                                         </button>
                                         <button type="submit">
@@ -1092,6 +1213,7 @@
         <section id="newsletter">
             <div class="container">
                 <div class="subscribe">
+
                     <div class="newsletter-wrapper">
                         <h2>Subscribe Newsletter</h2>
                         <p>Sign up our newsletter & receive <br>
@@ -1127,7 +1249,7 @@
         <div class="footer-content">
             <div class="container">
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-lg-3 col-md-6 col-sm-1">
                         <div class="info">
                             <h2>Store Information</h2>
                             <ul>
@@ -1145,7 +1267,7 @@
                         </div>
                     </div>
 
-                    <div class="col-3">
+                    <div class="col-lg-3 col-md-6 col-sm-1">
                         <div class="info">
                             <h2>Find It Fast</h2>
                             <ul>
@@ -1169,7 +1291,7 @@
                         </div>
                     </div>
 
-                    <div class="col-3">
+                    <div class="col-lg-3 col-md-6 col-sm-1">
                         <div class="info">
                             <h2>Information</h2>
                             <ul>
@@ -1193,7 +1315,7 @@
                         </div>
                     </div>
 
-                    <div class="col-3">
+                    <div class="col-lg-3 col-md-6 col-sm-1">
                         <div class="info">
                             <h2>Privacy & Policy</h2>
                             <ul>

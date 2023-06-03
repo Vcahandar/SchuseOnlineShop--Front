@@ -204,6 +204,24 @@ $(function(){
 
 
 
-
-
 // --------------- Modul END --------------------
+
+
+// SIDEBAR
+let iconx = document.querySelector(".iconx");
+let icon = document.querySelector(".fa-bars");
+let overlay = document.querySelector(".overlay");
+
+icon.onclick = function () {
+  var sidebar = document.querySelector(".content-area");
+  sidebar.style.width = "80%";  
+  sidebar.style.visibility = "visible";
+  sidebar.style.opacity = "1";
+};
+
+iconx.onclick = function () {
+  var sidebar = document.querySelector(".content-area");
+  sidebar.style.width = "0%";
+  sidebar.style.visibility = "hidden";
+  sidebar.style.opacity = "0";
+};
