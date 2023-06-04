@@ -432,115 +432,57 @@
                 }
             }
 
-            // .search-mob-icon {
-
-            //     .search-box {
-            //         display: flex;
-            //         align-items: center;
-
-            //         height: 30px;
-            //         border: 1px solid #ccc;
-            //         border-radius: 15px;
-            //         overflow: hidden;
-            //         margin-left: 12px;
-
-            //     }
-
-
-            //     .search-box input[type="text"] {
-            //         flex-grow: 2;
-            //         height: 100%;
-            //         border: none;
-            //         outline: none;
-            //         font-size: 1.2rem;
-            //         width: 0;
-            //         overflow: hidden;
-            //         transition: all .75s ease;
-            //     }
-
-            //     .search-box:hover input[type="text"] {
-            //         width: 117px;
-            //         padding-inline: 1.5rem;
-            //     }
-
-            //     .search-box button[type="submit"] {
-            //         width: 30px;
-            //         height: 100%;
-            //         background-color: #ccc;
-            //         border: none;
-            //         outline: none;
-            //         cursor: pointer;
-            //         transition: background-color 0.3s ease;
-            //     }
-
-            //     .search-box button[type="submit"]:hover {
-            //         background-color: #aaa;
-            //     }
-
-            //     .search-box i {
-            //         color: #fff;
-            //         font-size: 1.5rem;
-            //     }
-            // }
-
             .search-mob-icon {
-                .searchBox {
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform:  translate(-50%,50%);
-                    background: #2f3640;
-                    height: 40px;
-                    border-radius: 40px;
-                    padding: 10px;
-                
-                }
-                
-                .searchBox:hover > .searchInput {
-                    width: 240px;
-                    padding: 0 6px;
-                }
-                
-                .searchBox:hover > .searchButton {
-                  background: white;
-                  color : #2f3640;
-                }
-                
-                .searchButton {
-                    color: white;
-                    float: right;
-                    width: 40px;
-                    height: 40px;
-                    border-radius: 50%;
-                    background: #2f3640;
+
+                .search-box {
                     display: flex;
-                    justify-content: center;
                     align-items: center;
-                    transition: 0.4s;
-                }
-                
-                .searchInput {
-                    border:none;
-                    background: none;
-                    outline:none;
-                    float:left;
-                    padding: 0;
-                    color: white;
-                    font-size: 16px;
-                    transition: 0.4s;
-                    line-height: 40px;
-                    width: 0px;
-                
-                }
-                
-                @media screen and (max-width: 620px) {
-                .searchBox:hover > .searchInput {
-                    width: 150px;
-                    padding: 0 6px;
-                }
+
+                    height: 30px;
+                    border: 1px solid #ccc;
+                    border-radius: 15px;
+                    overflow: hidden;
+                    margin-left: 3px;
+
                 }
 
+
+                .search-box input[type="text"] {
+                    font-size: 1.2rem;
+                    border: none;
+                    width: 100px;
+                    height: 100%;
+                    outline: none;
+                    overflow: hidden;
+                    padding: 10px;
+
+                }
+
+                // .search-box:hover input[type="text"] {
+                //     width: 117px;
+                //     padding-inline: 1.5rem;
+                // }
+
+                .search-box button[type="submit"] {
+                    width: 30px;
+                    height: 100%;
+                    background-color: #ccc;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                }
+
+                // .search-box button[type="submit"]:hover {
+                //     background-color: #aaa;
+                // }
+
+                // .search-box i {
+                //     color: #fff;
+                //     font-size: 1.5rem;
+                // }
             }
+
+
         }
 
 
@@ -986,7 +928,7 @@
     }
 }
 
-#recent-arrivals {
+#recent-arrivals {  
 
     .product-text {
         text-align: center;
@@ -2350,8 +2292,6 @@ footer {
     }
 
 
-
-
     #trending-product {
 
         .slider__item {
@@ -2368,5 +2308,104 @@ footer {
 
     }
 
+}
+
+
+@media only screen and (max-width: 1200px) and (min-width: 760px ) {
+
+
+    #mobil-navbar{
+
+
+        .mobil-down-navbar{
+
+            margin-left: 70%;
+
+        }
+
+        .sidebar-mob-navbar{
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            display: flex;
+
+
+        }
+
+
+    }
+
+
+
+
+
+
+    #shopify-section {
+
+
+        .shopify-mob{
+            width: 50%;
+        }
+
+        .banner-description {
+            position: absolute;
+            left: 25px;
+            right: 25px;
+            padding: 20px 0 !important;
+        }
+
+        .title {
+            font-size: 21px !important;
+        }
+
+        .text-button {
+            margin-top: 0 !important;
+            font-size: 13px;
+        }
+    }
+
+
+    #services-wrapper {
+
+        .service {
+
+            display: flex;
+            height: 30%;
+            justify-content: space-around;
+        }
+    }
+
+
+    #trending-product {
+
+        .slider__item {
+
+            .card {
+                width: 20rem !important;
+
+            }
+        }
+
+
+    }
+
+
+    #newsletter{
+
+        .news-input{
+            margin-left: 25% !important;
+        }
+    }
+
+
+    #brand{
+
+        padding-bottom: 80%;
+    }
+
+
+    .footer-content{
+        display:none;
+    }
 
 }
