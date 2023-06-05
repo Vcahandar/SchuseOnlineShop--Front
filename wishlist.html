@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,10 +15,9 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="./assets/css/cart/cart.css">
-    <title>Cart</title>
+    <link rel="stylesheet" href="./assets/css/wishlist/wishlist.css">
+    <title>Wishlist</title>
 </head>
-
 <body>
 
     <div id="overlay"></div>
@@ -71,7 +69,7 @@
                                 </a>
                                 <ul class="dropdown-menu language">
                                     <li><a class="dropdown-item eng" href="#"><span>Log In</span></a></li>
-                                    <li><a class="dropdown-item grm" href="#"><span> Wishlist (2)</span></a>
+                                    <li><a class="dropdown-item grm" href="./wishlist.html"><span> Wishlist (2)</span></a>
                                     </li>
                                 </ul>
 
@@ -178,7 +176,7 @@
                             </div>
                             <div class="line"></div>
                             <div class="basket-mob-icon">
-                                <i class="fa-solid fa-basket-shopping"></i>
+                               <a href="./cart.html"><i class="fa-solid fa-basket-shopping"></i></a>
                                 <div class="basket-count">
                                     <span>0</span>
                                 </div>
@@ -240,26 +238,27 @@
                 </div>
             </div>
         </section>
-    </header>
+    </header> 
 
     <main>
         <section id="top-column-content">
             <div class="column-content">
                 <div class="title">
-                    <h2>Your Shopping Cart</h2>
+                    <h2>Wishlist</h2>
                 </div>
-                <div class="choose mt-4">
-                    <a href="./home.html">Home</a>
+                <div class="choose">
+                    <a href="./home.html">Home |</a>
+                    <span>Wishlist</span>
                 </div>
             </div>
         </section>
 
-        <section id="cart-main">
+        <section id="wishlist-main">
             <div class="container">
-                <div class="cart-table mt-5">
+                <div class="wishlist-table">
                     <div class="empty-continue d-none">
                         <div class="empty">
-                            <h2>Your cart is empty</h2>
+                            <h2>Your wishlist is empty</h2>
                         </div>
                         <div class="continue">
                             <a href="./shoes.html">
@@ -268,22 +267,20 @@
                         </div>
 
                     </div>
-
+                    
                     <table class="table">
                         <thead>
                             <tr>
                                 <th scope="col">Product</th>
                                 <th scope="col">Name</th>
                                 <th scope="col">Price</th>
-                                <th scope="col">Quantity</th>
-                                <th scope="col">Total</th>
                                 <th scope="col">Action</th>
                             </tr>
                         </thead>
                         <tbody>
 
 
-                            <tr data-id="2">
+                            <tr data-id="1">
                                 <td class="td-img">
                                     <div class="prdct-img">
                                         <img src="./assets/img/home/product1-1.webp" alt="">
@@ -291,22 +288,6 @@
                                 </td>
                                 <td class="td-name">
                                     <a href="">Style Black Sneakers</a>
-                                    <div class="product-option">
-                                        <span>Size:</span>
-                                        <span>M</span>
-                                    </div>
-                                    <div class="product-option">
-                                        <span>Color:</span>
-                                        <span>White</span>
-                                    </div>
-                                </td>
-                                <td class="td-price">235.00 $</td>
-                                <td class="td-count">
-                                    <div class="number">
-                                        <span class="minus">-</span>
-                                        <input type="text" value="1" disabled="">
-                                        <span class="plus">+</span>
-                                    </div>
                                 </td>
                                 <td class="td-total">235.00 $</td>
                                 <td><i class="fa-solid fa-trash delete"></i></td>
@@ -318,13 +299,7 @@
                         <div class="backShop">
                             <a href="./home.html"><button class="btn btn-warning">Continue shopping</button></a>
                         </div>
-                        <div class="total d-flex">
-                           <div class="total-price">
-                            <span class="title">Subtotal: $</span>
-                            <span class="num">0</span>
-                           </div>
-                            <a href="./checkout.html"><button class="btn btn-warning">Proceed To Checkout</button></a>
-                        </div>
+ 
                     </div>
                 </div>
             </div>
@@ -442,9 +417,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-    <script src="./assets/js/cart.js"></script>
-
-
+    <script src="./assets/js/wishlist.js"></script>
+    
 </body>
-
 </html>

@@ -376,7 +376,7 @@ header #mobil-navbar .down .content-area .content-area-center li a {
 }
 
 main #top-column-content {
-  height: 160px;
+  height: 134px;
   background-color: #f7f7f7;
   text-align: center;
   display: flex;
@@ -405,6 +405,53 @@ main #top-column-content .column-content .choose a:hover {
 }
 main #top-column-content .column-content .choose span {
   cursor: pointer;
+}
+main #login-page {
+  font-family: "Poppins", sans-serif;
+}
+main #login-page .account-block {
+  padding: 0;
+  background-image: url("../../img/login/jordan1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+}
+main #login-page .account-block .overlay {
+  flex: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+main #login-page .account-block .account-testimonial {
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  margin: 0 auto;
+  padding: 0 1.75rem;
+  bottom: 3rem;
+  left: 0;
+  right: 0;
+}
+main #login-page .login-title {
+  font-weight: 600;
+}
+main #login-page .text-muted {
+  font-weight: 600;
+}
+main #login-page .text-theme {
+  color: #5369f8 !important;
+  font-size: 23px;
+  font-weight: 600;
+}
+main #login-page .btn-theme {
+  background-color: #5369f8;
+  border-color: #5369f8;
+  color: #fff;
+  outline: none;
 }
 
 footer .container {
@@ -456,4 +503,4 @@ footer .footer-content .info ul li a {
 }
 footer .footer-content .info ul li a:hover {
   color: #ff871d;
-}/*# sourceMappingURL=shoes.css.map */
+}/*# sourceMappingURL=login.css.map */

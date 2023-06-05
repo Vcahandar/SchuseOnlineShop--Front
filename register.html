@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,10 +15,9 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="./assets/css/cart/cart.css">
-    <title>Cart</title>
+    <link rel="stylesheet" href="./assets/css/register/register.css">
+    <title>Register</title>
 </head>
-
 <body>
 
     <div id="overlay"></div>
@@ -71,7 +69,8 @@
                                 </a>
                                 <ul class="dropdown-menu language">
                                     <li><a class="dropdown-item eng" href="#"><span>Log In</span></a></li>
-                                    <li><a class="dropdown-item grm" href="#"><span> Wishlist (2)</span></a>
+                                    <li><a class="dropdown-item grm" href="./wishlist.html"><span> Wishlist
+                                                (2)</span></a>
                                     </li>
                                 </ul>
 
@@ -246,91 +245,89 @@
         <section id="top-column-content">
             <div class="column-content">
                 <div class="title">
-                    <h2>Your Shopping Cart</h2>
+                    <h2>Register</h2>
                 </div>
                 <div class="choose mt-4">
-                    <a href="./home.html">Home</a>
+                    <a href="./login.html">Login</a>
                 </div>
             </div>
         </section>
 
-        <section id="cart-main">
-            <div class="container">
-                <div class="cart-table mt-5">
-                    <div class="empty-continue d-none">
-                        <div class="empty">
-                            <h2>Your cart is empty</h2>
+        <section id="register-page" class="mt-5">
+            <div id="main-wrapper" class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-10">
+                        <div class="card border-0">
+                            <div class="card-body p-0">
+                                <div class="row no-gutters">
+
+                                    <div class="col-lg-6 d-none d-lg-inline-block">
+                                        <div class="account-block rounded-right">
+                                            <div class="overlay rounded-right"></div>
+                                            <div class="account-testimonial">
+                                                <h4 class="text-white mb-4">Stylish shoes are here!</h4>
+                                                <p class="lead text-white">"You are making the right choice"</p>
+                                                <p>- Admin User</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <div class="p-5">
+                                            <div class="mb-5">
+                                                <h3 class="h4 font-weight-bold text-theme">Register </h3>
+                                            </div>
+
+                                            <h6 class="h5 mb-0 login-title">Welcome back!</h6>
+                                            <p class="text-muted mt-2 mb-5">Enter your email address and password to
+                                                access admin panel.</p>
+
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">First Name</label>
+                                                    <input type="text" class="form-control" id="">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">Last Name</label>
+                                                    <input type="text" class="form-control" id="">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">Email address</label>
+                                                    <input type="text" class="form-control" id="exampleInputEmail1">
+                                                </div>
+                                                <div class="form-group mb-5">
+                                                    <label for="exampleInputPassword1">Password</label>
+                                                    <input type="password" class="form-control"
+                                                        id="exampleInputPassword1">
+                                                </div>
+                                                <div class="form-group mb-5">
+                                                    <label for="exampleInputPassword1">Confirm Password</label>
+                                                    <input type="password" class="form-control"
+                                                        id="">
+                                                </div>
+                                                <button type="submit" class="btn btn-theme">Create</button>
+                                              
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <!-- end card-body -->
                         </div>
-                        <div class="continue">
-                            <a href="./shoes.html">
-                                <button type="submit" class="btn btn-warning">Continue shopping</button>
-                            </a>
-                        </div>
+                        
 
                     </div>
-
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">Product</th>
-                                <th scope="col">Name</th>
-                                <th scope="col">Price</th>
-                                <th scope="col">Quantity</th>
-                                <th scope="col">Total</th>
-                                <th scope="col">Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-
-
-                            <tr data-id="2">
-                                <td class="td-img">
-                                    <div class="prdct-img">
-                                        <img src="./assets/img/home/product1-1.webp" alt="">
-                                    </div>
-                                </td>
-                                <td class="td-name">
-                                    <a href="">Style Black Sneakers</a>
-                                    <div class="product-option">
-                                        <span>Size:</span>
-                                        <span>M</span>
-                                    </div>
-                                    <div class="product-option">
-                                        <span>Color:</span>
-                                        <span>White</span>
-                                    </div>
-                                </td>
-                                <td class="td-price">235.00 $</td>
-                                <td class="td-count">
-                                    <div class="number">
-                                        <span class="minus">-</span>
-                                        <input type="text" value="1" disabled="">
-                                        <span class="plus">+</span>
-                                    </div>
-                                </td>
-                                <td class="td-total">235.00 $</td>
-                                <td><i class="fa-solid fa-trash delete"></i></td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <div class="total-continue">
-                        <div class="backShop">
-                            <a href="./home.html"><button class="btn btn-warning">Continue shopping</button></a>
-                        </div>
-                        <div class="total d-flex">
-                           <div class="total-price">
-                            <span class="title">Subtotal: $</span>
-                            <span class="num">0</span>
-                           </div>
-                            <a href="./checkout.html"><button class="btn btn-warning">Proceed To Checkout</button></a>
-                        </div>
-                    </div>
+                    <!-- end col -->
                 </div>
+                <!-- Row -->
             </div>
-
         </section>
     </main>
+
+
+
 
 
 
@@ -442,9 +439,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-    <script src="./assets/js/cart.js"></script>
-
-
+    <script src="./assets/js/register.js"></script>
+    
 </body>
-
 </html>

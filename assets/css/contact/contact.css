@@ -82,6 +82,7 @@ header #page-navbar .up-navbar .account-basket {
   padding-top: 10px;
   color: #666666;
   font-size: 14px;
+  align-items: center;
   justify-content: flex-end;
 }
 header #page-navbar .up-navbar .account-basket span {
@@ -107,6 +108,9 @@ header #page-navbar .up-navbar .account-basket .icon {
   align-content: flex-start;
   align-items: center;
   gap: 5px;
+}
+header #page-navbar .up-navbar .account-basket .icon i {
+  color: #000;
 }
 header #page-navbar .up-navbar .account-basket .icon .basket-count {
   font-size: 12px;
@@ -241,6 +245,7 @@ header #mobil-navbar .mobil-up-navbar .dropdown {
   color: #666666;
   font-size: 14px;
   font-weight: 400;
+  align-items: center;
 }
 header #mobil-navbar .mobil-up-navbar .dropdown .basic :hover {
   color: #ff871d;

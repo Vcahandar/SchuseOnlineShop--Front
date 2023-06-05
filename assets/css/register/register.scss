@@ -544,7 +544,7 @@ header{
 }
 
 
-main {
+main{
 
     #top-column-content {
         height: 134px;
@@ -592,192 +592,67 @@ main {
         }
     }
 
+    #register-page{
+        font-family: 'Poppins', sans-serif;
+        .account-block {
+            padding: 0;
+            background-image: url("../../img/login/wp7838324.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            position: relative;
 
 
-    #cart-main {
-
-        .cart-table {
-            font-family: 'Poppins', sans-serif;
-            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-
-            .empty-continue {
-
-                .empty {
-                    text-align: center;
-                    padding: 20px;
-                }
-
-                .continue {
-                    display: flex;
-                    justify-content: center;
-                    padding-bottom: 40px;
-
-                    .btn {
-                        outline: none;
-                        height: 60px;
-                        width: 220px;
-                        color: #fff;
-                        background-color: #ef6c00 !important;
-                        font-weight: 600;
-                    }
-                }
+            .overlay {
+                -webkit-box-flex: 1;
+                -ms-flex: 1;
+                flex: 1;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: rgba(0, 0, 0, 0.4);
             }
 
-            .table {
-                user-select: none;
-
-                th {
-
-                    text-align: center;
-                }
-
-                tr {
-                    text-align: center;
-                }
-
-
-                .prdct-img {
-                    width: 110px;
-                    height: 110px;
-                    border: 1px solid lightgray;
-
-                    img {
-                        width: 100%;
-                    }
-                }
-
-                .td-img {
-                    width: 95px;
-                }
-
-                .td-name {
-                    padding-top: 30px;
-                    width: 184px;
-                    font-weight: 700;
-                    text-align: center;
-
-                    .product-option {
-
-                        color: #666;
-                        font-weight: 400;
-                    }
-                }
-
-                .td-price {
-                    font-size: 23px;
-                    font-weight: 600;
-                    padding-top: 45px;
-
-                }
-
-                .td-count {
-
-                    padding-top: 33px;
-
-
-                    .number {
-                        margin: 0;
-                    }
-
-                    .minus,
-                    .plus {
-                        cursor: pointer;
-                        width: 20px;
-                        height: 52px;
-                        font-size: 35px;
-                        display: inline-block;
-                        vertical-align: middle;
-                        text-align: center;
-                    }
-
-                    input {
-                        height: 34px;
-                        width: 80px;
-                        text-align: center;
-                        font-size: 17px;
-                        border: 1px solid #ddd;
-                        border-radius: 4px;
-                        display: inline-block;
-                        vertical-align: middle;
-
-                    }
-                }
-
-                .td-total {
-                    padding-top: 45px;
-                    font-size: 23px;
-                    font-weight: 600;
-                    color: #f33927;
-                }
-
-                .delete {
-                    padding-top: 40px;
-                    font-size: 27px;
-                    cursor: pointer;
-                    color: red;
-                }
-
-
-            }
-
-            .total-continue {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-
-                .backShop {
-
-                    button {
-                        margin-left: 8px;
-                        font-weight: 800;
-                        color: white;
-                        background-color: #ff871d;
-                        height: 45px;
-                        font-family: 'Poppins', sans-serif;
-                        outline: none;
-
-                        &:hover {
-                            background-color: black;
-                            color: white;
-                            border-color: black;
-                        }
-
-                    }
-
-                }
-
-                .total {
-                    font-size: 14px;
-                    font-weight: 600;
-                    margin-right: 10px;
-                    padding-bottom: 10px;
-                    align-items: center;
-                    gap: 35px;
-
-                    .btn {
-                        font-weight: 800;
-                        color: white;
-                        background-color: black;
-                        height: 55px;
-                        font-family: 'Poppins', sans-serif;
-                        outline: none;
-                        border-color: black;
-
-                        &:hover{
-
-                            background-color: #ff871d;
-                            color: white;
-                            border-color: #ff871d;
-                        }
-                    }
-
-                }
+            .account-testimonial {
+                text-align: center;
+                color: #fff;
+                position: absolute;
+                margin: 0 auto;
+                padding: 0 1.75rem;
+                bottom: 3rem;
+                left: 0;
+                right: 0;
             }
         }
+
+        .login-title{
+            font-weight: 600;
+        }
+
+        .text-muted{
+            font-weight: 600;
+        }
+        
+        
+        
+        .text-theme {
+            color: #5369f8 !important;
+            font-size: 23px;
+            font-weight: 600;
+        }
+        
+        .btn-theme {
+            background-color: #5369f8;
+            border-color: #5369f8;
+            color: #fff;
+            outline: none;
+        }
     }
+
+
 }
-
-
 
 
 footer {

@@ -406,6 +406,138 @@ main #top-column-content .column-content .choose a:hover {
 main #top-column-content .column-content .choose span {
   cursor: pointer;
 }
+main #wishlist-main {
+  font-family: "Poppins", sans-serif;
+}
+main #wishlist-main .container {
+  max-width: 1300px;
+}
+main #wishlist-main .container .wishlist-table {
+  margin-top: 35px;
+}
+main #wishlist-main .container .wishlist-table .empty-continue .empty {
+  text-align: center;
+  padding: 20px;
+}
+main #wishlist-main .container .wishlist-table .empty-continue .continue {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+main #wishlist-main .container .wishlist-table .empty-continue .continue .btn {
+  outline: none;
+  height: 60px;
+  width: 220px;
+  color: #fff;
+  background-color: #ef6c00 !important;
+  font-weight: 600;
+}
+main #wishlist-main .container .wishlist-table .continue {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+main #wishlist-main .container .wishlist-table .continue button {
+  height: 60px;
+  width: 220px;
+  color: #fff;
+  background-color: #ef6c00 !important;
+  font-weight: 600;
+}
+main #wishlist-main .container .wishlist-table .table {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+main #wishlist-main .container .wishlist-table .table th {
+  text-align: center;
+}
+main #wishlist-main .container .wishlist-table .table tr {
+  text-align: center;
+}
+main #wishlist-main .container .wishlist-table .table .prdct-img {
+  width: 110px;
+  height: 110px;
+  border: 1px solid lightgray;
+}
+main #wishlist-main .container .wishlist-table .table .prdct-img img {
+  width: 100%;
+}
+main #wishlist-main .container .wishlist-table .table .td-img {
+  width: 95px;
+}
+main #wishlist-main .container .wishlist-table .table .td-name {
+  padding-top: 55px;
+  width: 184px;
+  font-weight: 700;
+  text-align: center;
+}
+main #wishlist-main .container .wishlist-table .table .td-name .product-option {
+  color: #666;
+  font-weight: 400;
+}
+main #wishlist-main .container .wishlist-table .table .td-price {
+  font-size: 23px;
+  font-weight: 600;
+  padding-top: 45px;
+}
+main #wishlist-main .container .wishlist-table .table .td-count {
+  padding-top: 33px;
+}
+main #wishlist-main .container .wishlist-table .table .td-count .number {
+  margin: 0;
+}
+main #wishlist-main .container .wishlist-table .table .td-count .minus,
+main #wishlist-main .container .wishlist-table .table .td-count .plus {
+  cursor: pointer;
+  width: 20px;
+  height: 52px;
+  font-size: 35px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+main #wishlist-main .container .wishlist-table .table .td-count input {
+  height: 34px;
+  width: 80px;
+  text-align: center;
+  font-size: 17px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: inline-block;
+  vertical-align: middle;
+}
+main #wishlist-main .container .wishlist-table .table .td-total {
+  padding-top: 45px;
+  font-size: 23px;
+  font-weight: 600;
+  color: #f33927;
+}
+main #wishlist-main .container .wishlist-table .table .delete {
+  padding-top: 40px;
+  font-size: 27px;
+  cursor: pointer;
+  color: red;
+}
+main #wishlist-main .container .wishlist-table .total-continue {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main #wishlist-main .container .wishlist-table .total-continue .backShop button {
+  margin-left: 8px;
+  font-weight: 800;
+  color: white;
+  background-color: #ff871d;
+  height: 45px;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+}
+main #wishlist-main .container .wishlist-table .total-continue .backShop button:hover {
+  background-color: black;
+  color: white;
+  border-color: black;
+}
 
 footer .container {
   max-width: 100% !important;
@@ -456,4 +588,4 @@ footer .footer-content .info ul li a {
 }
 footer .footer-content .info ul li a:hover {
   color: #ff871d;
-}/*# sourceMappingURL=shoes.css.map */
+}/*# sourceMappingURL=wishlist.css.map */
