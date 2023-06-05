@@ -375,6 +375,9 @@ header{
             .account-mob-icon {
     
                 font-size: 24px;
+                a{
+                    color: #000;
+                }
     
             }
     
@@ -392,6 +395,10 @@ header{
             .basket-mob-icon {
                 font-size: 22px;
                 display: flex;
+                
+                a{
+                    color: #000;
+                }
     
                 .basket-count {
                     font-size: 11px;

@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./assets/css/shoes/shoes.css">
 
@@ -72,7 +75,8 @@
                                 </a>
                                 <ul class="dropdown-menu language">
                                     <li><a class="dropdown-item eng" href="#"><span>Log In</span></a></li>
-                                    <li><a class="dropdown-item grm" href="#"><span> Wishlist (2)</span></a>
+                                    <li><a class="dropdown-item grm" href="./wishlist.html"><span> Wishlist
+                                                (2)</span></a>
                                     </li>
                                 </ul>
 
@@ -175,11 +179,11 @@
                     <div class="col-6">
                         <div class="mobil-down-navbar">
                             <div class="account-mob-icon">
-                                <i class="fa-regular fa-user"></i>
+                                <a href="./login.html"><i class="fa-regular fa-user"></i></a>
                             </div>
                             <div class="line"></div>
                             <div class="basket-mob-icon">
-                                <i class="fa-solid fa-basket-shopping"></i>
+                                <a href="./cart.html"><i class="fa-solid fa-basket-shopping"></i></a>
                                 <div class="basket-count">
                                     <span>0</span>
                                 </div>
@@ -249,13 +253,684 @@
         <section id="top-column-content">
             <div class="column-content">
                 <div class="title">
-                    <h2>Product</h2>
+                    <h2>Products</h2>
                 </div>
                 <div class="choose">
                     <a href="./home.html">Home |</a>
-                    <span>Shoed</span>
+                    <span>Shoes</span>
                 </div>
             </div>
+        </section>
+
+        <section id="shoes-main" class="mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="side-bar">
+                            <div class="product-categorie">
+                                <div class="title-categorie">
+                                    <h4>Shop By Categories</h4>
+                                </div>
+                                <div class="sidebar-body">
+                                    <ul class="categorie-list">
+                                        <li><a href="">All</a></li>
+                                        <li><a href="">Men</a></li>
+                                        <li><a href="">Women</a></li>
+                                        <li><a href="">Casual shoes</a></li>
+                                        <li><a href="">Winter shoes</a></li>
+                                        <li><a href="">Slippers</a></li>
+                                        <li><a href="">Football Shoes</a></li>
+                                        <li><a href="">Running Shoes</a></li>
+
+                                    </ul>
+
+                                </div>
+                            </div>
+                            <div class="line"></div>
+                            <div class="product-price">
+                                <div class="price-title">
+                                    <h3>Filter By Price</h3>
+                                </div>
+                                <div class="price-filter">
+                                    <div class="card">
+                                        <div class="price-content">
+                                            <div>
+                                                <label>Min</label>
+                                                <p id="min-value">50</p>
+                                            </div>
+
+                                            <div>
+                                                <label>Max</label>
+                                                <p id="max-value">500</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="range-slider">
+                                            <input type="range" class="min-price" value="100" min="10" max="500"
+                                                step="10">
+                                            <input type="range" class="max-price" value="250" min="10" max="500"
+                                                step="10">
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                            <div class="product-tags">
+                                <div class="tags-title">
+                                    <h3>Product type</h3>
+                                </div>
+                                <div class="sidebar-body">
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" class="cbox" name="boots" value="boots">
+                                            <label  class="cbox-label" for="boots">Boots (4)</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" class="cbox" name="flats" value="flats">
+                                            <label  class="cbox-label" for="flats">Flats (2)</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" class="cbox" name="heels" value="heels">
+                                            <label  class="cbox-label" for="heels">Heels (3) </label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" class="cbox" name="loafers" value="loafers">
+                                            <label  class="cbox-label" for="loafers">Loafers (2)</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" class="cbox" name="mules" value="mules">
+                                            <label  class="cbox-label" for="mules">Mules (2)</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" class="cbox" name="sandals" value="sandals">
+                                            <label  class="cbox-label" for="sandals">Sandals (4)</label>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+
+                            <div class="product-brand">
+                                <div class="tags-title">
+                                    <h3>Brand</h3>
+                                </div>
+                                <div class="sidebar-body">
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" class="cbox" name="adidas" value="adidas">
+                                            <label  class="cbox-label" for="adidas">Adidas (4)</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" class="cbox" name="fila" value="fila">
+                                            <label  class="cbox-label" for="fila">Fila (2)</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" class="cbox" name="nike" value="nike">
+                                            <label  class="cbox-label" for="nike">Nike (3) </label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" class="cbox" name="puma" value="puma">
+                                            <label  class="cbox-label" for="puma">Puma (2)</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" class="cbox" name="reebok" value="reebok">
+                                            <label  class="cbox-label" for="reebok">Reebok (2)</label>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                
+
+                            </div>
+
+                            <div class="product-color">
+                                <div class="tags-title">
+                                    <h3>Color</h3>
+                                </div>
+                                <div class="sidebar-body">
+                                    <ul>
+                                        <li>
+                                            <a href="">All <span> (15)</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="">Black <span> (3)</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="">Blue <span> (3)</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="">Green <span> (3)</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="">White <span> (3)</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="">Pink <span> (3)</span></a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                
+
+                            </div>
+
+                            <div class="product-size">
+                                <div class="tags-title">
+                                    <h3>Size</h3>
+                                </div>
+                                <div class="sidebar-body">
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" class="cbox" name="s" value="s">
+                                            <label  class="cbox-label" for="s">S <span>(4)</span></label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" class="cbox" name="m" value="m">
+                                            <label  class="cbox-label" for="m">M <span>(2)</span></label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" class="cbox" name="l" value="l">
+                                            <label  class="cbox-label" for="l">L <span>(5)</span> </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="product-sale-banner">
+                                <a href="">
+                                    <img src="./assets/img/shoes/pro-sale.jpg" alt="">
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="product-shops">
+                            <div class="page-width collection-filters">
+                                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                                    <option selected>Alphabetically, A-Z</option>
+                                    <option value="1">Alphabetically, Z-A</option>
+                                    <option value="2">Best selling</option>
+                                  </select>
+                            </div>
+
+                            <div class="product-carts">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="card" data-id="1" style="width: 18rem;">
+                                            <div class="produc-imgs">
+                                                <img src="./assets/img/home/product1-1.webp" class="card-img-top basic" alt="...">
+                                                <img src="./assets/img/home/product1-1.webp" class="card-img-top top" alt="...">
+                                            </div>
+                                            <div class="discount">
+                                                <span class="badge">-7%</span>
+                                            </div>
+                
+                                            <div class="product-hover d-flex">
+                                                <button type="submit">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                </button>
+                                                <button type="submit" class="d-lg-block d-none">
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </button>
+                                                <button type="submit">
+                                                    <i class="bi bi-bag"></i>
+                                                </button>
+                                            </div>
+                                            <div class="star-product">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star"></i>
+                                                <i class="bi bi-star"></i>
+                                            </div>
+                                            <div class="card-body">
+                                                <a href="">
+                                                    <p>Wild Taps Sneakers</p>
+                                                </a>
+                
+                                                <p class="card-text price"> <span>$</span>90.00</p>
+                                                <del>$97.00</del>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <div class="card" data-id="1" style="width: 18rem;">
+                                            <div class="produc-imgs">
+                                                <img src="./assets/img/home/product1-1.webp" class="card-img-top basic" alt="...">
+                                                <img src="./assets/img/home/product1-1.webp" class="card-img-top top" alt="...">
+                                            </div>
+                                            <div class="discount">
+                                                <span class="badge">-7%</span>
+                                            </div>
+                
+                                            <div class="product-hover d-flex">
+                                                <button type="submit">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                </button>
+                                                <button type="submit" class="d-lg-block d-none">
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </button>
+                                                <button type="submit">
+                                                    <i class="bi bi-bag"></i>
+                                                </button>
+                                            </div>
+                                            <div class="star-product">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star"></i>
+                                                <i class="bi bi-star"></i>
+                                            </div>
+                                            <div class="card-body">
+                                                <a href="">
+                                                    <p>Wild Taps Sneakers</p>
+                                                </a>
+                
+                                                <p class="card-text price"> <span>$</span>90.00</p>
+                                                <del>$97.00</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="card" data-id="1" style="width: 18rem;">
+                                            <div class="produc-imgs">
+                                                <img src="./assets/img/home/product1-1.webp" class="card-img-top basic" alt="...">
+                                                <img src="./assets/img/home/product1-1.webp" class="card-img-top top" alt="...">
+                                            </div>
+                                            <div class="discount">
+                                                <span class="badge">-7%</span>
+                                            </div>
+                
+                                            <div class="product-hover d-flex">
+                                                <button type="submit">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                </button>
+                                                <button type="submit" class="d-lg-block d-none">
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </button>
+                                                <button type="submit">
+                                                    <i class="bi bi-bag"></i>
+                                                </button>
+                                            </div>
+                                            <div class="star-product">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star"></i>
+                                                <i class="bi bi-star"></i>
+                                            </div>
+                                            <div class="card-body">
+                                                <a href="">
+                                                    <p>Wild Taps Sneakers</p>
+                                                </a>
+                
+                                                <p class="card-text price"> <span>$</span>90.00</p>
+                                                <del>$97.00</del>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <div class="card" data-id="1" style="width: 18rem;">
+                                            <div class="produc-imgs">
+                                                <img src="./assets/img/home/product1-1.webp" class="card-img-top basic" alt="...">
+                                                <img src="./assets/img/home/product1-1.webp" class="card-img-top top" alt="...">
+                                            </div>
+                                            <div class="discount">
+                                                <span class="badge">-7%</span>
+                                            </div>
+                
+                                            <div class="product-hover d-flex">
+                                                <button type="submit">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                </button>
+                                                <button type="submit" class="d-lg-block d-none">
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </button>
+                                                <button type="submit">
+                                                    <i class="bi bi-bag"></i>
+                                                </button>
+                                            </div>
+                                            <div class="star-product">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star"></i>
+                                                <i class="bi bi-star"></i>
+                                            </div>
+                                            <div class="card-body">
+                                                <a href="">
+                                                    <p>Wild Taps Sneakers</p>
+                                                </a>
+                
+                                                <p class="card-text price"> <span>$</span>90.00</p>
+                                                <del>$97.00</del>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <div class="card" data-id="1" style="width: 18rem;">
+                                            <div class="produc-imgs">
+                                                <img src="./assets/img/home/product1-1.webp" class="card-img-top basic" alt="...">
+                                                <img src="./assets/img/home/product1-1.webp" class="card-img-top top" alt="...">
+                                            </div>
+                                            <div class="discount">
+                                                <span class="badge">-7%</span>
+                                            </div>
+                
+                                            <div class="product-hover d-flex">
+                                                <button type="submit">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                </button>
+                                                <button type="submit" class="d-lg-block d-none">
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </button>
+                                                <button type="submit">
+                                                    <i class="bi bi-bag"></i>
+                                                </button>
+                                            </div>
+                                            <div class="star-product">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star"></i>
+                                                <i class="bi bi-star"></i>
+                                            </div>
+                                            <div class="card-body">
+                                                <a href="">
+                                                    <p>Wild Taps Sneakers</p>
+                                                </a>
+                
+                                                <p class="card-text price"> <span>$</span>90.00</p>
+                                                <del>$97.00</del>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <div class="card" data-id="1" style="width: 18rem;">
+                                            <div class="produc-imgs">
+                                                <img src="./assets/img/home/product1-1.webp" class="card-img-top basic" alt="...">
+                                                <img src="./assets/img/home/product1-1.webp" class="card-img-top top" alt="...">
+                                            </div>
+                                            <div class="discount">
+                                                <span class="badge">-7%</span>
+                                            </div>
+                
+                                            <div class="product-hover d-flex">
+                                                <button type="submit">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                </button>
+                                                <button type="submit" class="d-lg-block d-none">
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </button>
+                                                <button type="submit">
+                                                    <i class="bi bi-bag"></i>
+                                                </button>
+                                            </div>
+                                            <div class="star-product">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star"></i>
+                                                <i class="bi bi-star"></i>
+                                            </div>
+                                            <div class="card-body">
+                                                <a href="">
+                                                    <p>Wild Taps Sneakers</p>
+                                                </a>
+                
+                                                <p class="card-text price"> <span>$</span>90.00</p>
+                                                <del>$97.00</del>
+                                            </div>
+                                        </div>
+                                    </div>  
+
+                                    <div class="col-lg-4">
+                                        <div class="card" data-id="1" style="width: 18rem;">
+                                            <div class="produc-imgs">
+                                                <img src="./assets/img/home/product1-1.webp" class="card-img-top basic" alt="...">
+                                                <img src="./assets/img/home/product1-1.webp" class="card-img-top top" alt="...">
+                                            </div>
+                                            <div class="discount">
+                                                <span class="badge">-7%</span>
+                                            </div>
+                
+                                            <div class="product-hover d-flex">
+                                                <button type="submit">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                </button>
+                                                <button type="submit" class="d-lg-block d-none">
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </button>
+                                                <button type="submit">
+                                                    <i class="bi bi-bag"></i>
+                                                </button>
+                                            </div>
+                                            <div class="star-product">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star"></i>
+                                                <i class="bi bi-star"></i>
+                                            </div>
+                                            <div class="card-body">
+                                                <a href="">
+                                                    <p>Wild Taps Sneakers</p>
+                                                </a>
+                
+                                                <p class="card-text price"> <span>$</span>90.00</p>
+                                                <del>$97.00</del>
+                                            </div>
+                                        </div>
+                                    </div> 
+
+                                    <div class="col-lg-4">
+                                        <div class="card" data-id="1" style="width: 18rem;">
+                                            <div class="produc-imgs">
+                                                <img src="./assets/img/home/product1-1.webp" class="card-img-top basic" alt="...">
+                                                <img src="./assets/img/home/product1-1.webp" class="card-img-top top" alt="...">
+                                            </div>
+                                            <div class="discount">
+                                                <span class="badge">-7%</span>
+                                            </div>
+                
+                                            <div class="product-hover d-flex">
+                                                <button type="submit">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                </button>
+                                                <button type="submit" class="d-lg-block d-none">
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </button>
+                                                <button type="submit">
+                                                    <i class="bi bi-bag"></i>
+                                                </button>
+                                            </div>
+                                            <div class="star-product">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star"></i>
+                                                <i class="bi bi-star"></i>
+                                            </div>
+                                            <div class="card-body">
+                                                <a href="">
+                                                    <p>Wild Taps Sneakers</p>
+                                                </a>
+                
+                                                <p class="card-text price"> <span>$</span>90.00</p>
+                                                <del>$97.00</del>
+                                            </div>
+                                        </div>
+                                    </div> 
+
+                                    <div class="col-lg-4">
+                                        <div class="card" data-id="1" style="width: 18rem;">
+                                            <div class="produc-imgs">
+                                                <img src="./assets/img/home/product1-1.webp" class="card-img-top basic" alt="...">
+                                                <img src="./assets/img/home/product1-1.webp" class="card-img-top top" alt="...">
+                                            </div>
+                                            <div class="discount">
+                                                <span class="badge">-7%</span>
+                                            </div>
+                
+                                            <div class="product-hover d-flex">
+                                                <button type="submit">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                </button>
+                                                <button type="submit" class="d-lg-block d-none">
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </button>
+                                                <button type="submit">
+                                                    <i class="bi bi-bag"></i>
+                                                </button>
+                                            </div>
+                                            <div class="star-product">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star"></i>
+                                                <i class="bi bi-star"></i>
+                                            </div>
+                                            <div class="card-body">
+                                                <a href="">
+                                                    <p>Wild Taps Sneakers</p>
+                                                </a>
+                
+                                                <p class="card-text price"> <span>$</span>90.00</p>
+                                                <del>$97.00</del>
+                                            </div>
+                                        </div>
+                                    </div> 
+
+                                    <div class="col-lg-4">
+                                        <div class="card" data-id="1" style="width: 18rem;">
+                                            <div class="produc-imgs">
+                                                <img src="./assets/img/home/product1-1.webp" class="card-img-top basic" alt="...">
+                                                <img src="./assets/img/home/product1-1.webp" class="card-img-top top" alt="...">
+                                            </div>
+                                            <div class="discount">
+                                                <span class="badge">-7%</span>
+                                            </div>
+                
+                                            <div class="product-hover d-flex">
+                                                <button type="submit">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                </button>
+                                                <button type="submit" class="d-lg-block d-none">
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </button>
+                                                <button type="submit">
+                                                    <i class="bi bi-bag"></i>
+                                                </button>
+                                            </div>
+                                            <div class="star-product">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star"></i>
+                                                <i class="bi bi-star"></i>
+                                            </div>
+                                            <div class="card-body">
+                                                <a href="">
+                                                    <p>Wild Taps Sneakers</p>
+                                                </a>
+                
+                                                <p class="card-text price"> <span>$</span>90.00</p>
+                                                <del>$97.00</del>
+                                            </div>
+                                        </div>
+                                    </div> 
+
+                                    <div class="col-lg-4">
+                                        <div class="card" data-id="1" style="width: 18rem;">
+                                            <div class="produc-imgs">
+                                                <img src="./assets/img/home/product1-1.webp" class="card-img-top basic" alt="...">
+                                                <img src="./assets/img/home/product1-1.webp" class="card-img-top top" alt="...">
+                                            </div>
+                                            <div class="discount">
+                                                <span class="badge">-7%</span>
+                                            </div>
+                
+                                            <div class="product-hover d-flex">
+                                                <button type="submit">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                </button>
+                                                <button type="submit" class="d-lg-block d-none">
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </button>
+                                                <button type="submit">
+                                                    <i class="bi bi-bag"></i>
+                                                </button>
+                                            </div>
+                                            <div class="star-product">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star"></i>
+                                                <i class="bi bi-star"></i>
+                                            </div>
+                                            <div class="card-body">
+                                                <a href="">
+                                                    <p>Wild Taps Sneakers</p>
+                                                </a>
+                
+                                                <p class="card-text price"> <span>$</span>90.00</p>
+                                                <del>$97.00</del>
+                                            </div>
+                                        </div>
+                                    </div> 
+
+                                    <div class="col-lg-4">
+                                        <div class="card" data-id="1" style="width: 18rem;">
+                                            <div class="produc-imgs">
+                                                <img src="./assets/img/home/product1-1.webp" class="card-img-top basic" alt="...">
+                                                <img src="./assets/img/home/product1-1.webp" class="card-img-top top" alt="...">
+                                            </div>
+                                            <div class="discount">
+                                                <span class="badge">-7%</span>
+                                            </div>
+                
+                                            <div class="product-hover d-flex">
+                                                <button type="submit">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                </button>
+                                                <button type="submit" class="d-lg-block d-none">
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </button>
+                                                <button type="submit">
+                                                    <i class="bi bi-bag"></i>
+                                                </button>
+                                            </div>
+                                            <div class="star-product">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star"></i>
+                                                <i class="bi bi-star"></i>
+                                            </div>
+                                            <div class="card-body">
+                                                <a href="">
+                                                    <p>Wild Taps Sneakers</p>
+                                                </a>
+                
+                                                <p class="card-text price"> <span>$</span>90.00</p>
+                                                <del>$97.00</del>
+                                            </div>
+                                        </div>
+                                    </div> 
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </section>
 
 
@@ -363,7 +1038,7 @@
 
         </div>
 
-    </footer> 
+    </footer>
 
 
     <script src="https://kit.fontawesome.com/b01bc4ce26.js" crossorigin="anonymous"></script>
