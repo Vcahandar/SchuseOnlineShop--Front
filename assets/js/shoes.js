@@ -158,22 +158,7 @@ $(document).ready(function () {
 
 // --------------- Modul END --------------------
 
-$(function(){
-  "use strict";
 
-  // Sticky menu 
-  var $window = $(window);
-  $window.on('scroll', function () {
-    var scroll = window.scrollY;
-    if (scroll < 200) {
-      $(".down-navbar").removeClass("stick-nav");
-    } else {
-      $(".down-navbar").addClass("stick-nav");
-    }
-  });
-
-
-})
 
 
 

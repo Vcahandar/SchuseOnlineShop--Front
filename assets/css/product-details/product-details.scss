@@ -660,6 +660,10 @@ main {
                 .pro-price {
                     margin-top: 15px;
                     font-size: 20px;
+
+                    del {
+                        color: #1e1d1db3;
+                    }
                 }
 
                 .regular-price {
@@ -672,6 +676,79 @@ main {
                     width: 80%;
                     font-size: 16px;
                     color: #020202;
+                }
+
+                .pro-type {
+
+                    font-size: 17px;
+                    margin-top: 15px;
+
+                    .type-title {
+                        font-weight: 600;
+                        display: inline-block;
+                        min-width: 120px;
+                    }
+
+                    .pro-variant-sku {}
+
+
+                    .pro-size {
+                        border: 1px solid black;
+                        padding: 6px;
+                        border-radius: 7px;
+                        color: blue;
+                        border-color: cornflowerblue;
+
+                    }
+
+                }
+
+                .pro-type-size {
+
+                    font-size: 17px;
+                    margin-top: 15px;
+                    display: flex;
+
+                    .type-title {
+                        font-weight: 600;
+                        display: inline-block;
+                        min-width: 120px;
+                    }
+
+                    .shoes-size {
+                        width: 58%;
+
+                        input {
+                            overflow: hidden;
+                            position: absolute;
+                            height: 1px;
+                            width: 1px;
+                        }
+
+                        label {
+                            border: 1px solid;
+                            border-radius: 4rem;
+                            color: blue;
+                            display: inline-block;
+                            vertical-align: top;
+                            margin: 0.7rem 0.5rem 0.2rem 0;
+                            padding: 1rem 2rem;
+                            font-size: 1.4rem;
+                            letter-spacing: .1rem;
+                            line-height: 1;
+                            text-align: center;
+                            transition: border 1s ease;
+                            cursor: pointer
+                        }
+
+                        input[type=radio]:checked+label {
+                            color: red;
+                            border: 1px solid red;
+                            position: relative;
+                          
+                        }
+                    }
+
                 }
             }
         }

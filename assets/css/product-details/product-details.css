@@ -455,6 +455,9 @@ main #product-details-wrapper .product-details-inner .product-details-des .pro-p
   margin-top: 15px;
   font-size: 20px;
 }
+main #product-details-wrapper .product-details-inner .product-details-des .pro-price del {
+  color: rgba(30, 29, 29, 0.7019607843);
+}
 main #product-details-wrapper .product-details-inner .product-details-des .regular-price {
   color: #ff871d;
   font-weight: 600;
@@ -464,6 +467,61 @@ main #product-details-wrapper .product-details-inner .product-details-des .pro-d
   width: 80%;
   font-size: 16px;
   color: #020202;
+}
+main #product-details-wrapper .product-details-inner .product-details-des .pro-type {
+  font-size: 17px;
+  margin-top: 15px;
+}
+main #product-details-wrapper .product-details-inner .product-details-des .pro-type .type-title {
+  font-weight: 600;
+  display: inline-block;
+  min-width: 120px;
+}
+main #product-details-wrapper .product-details-inner .product-details-des .pro-type .pro-size {
+  border: 1px solid black;
+  padding: 6px;
+  border-radius: 7px;
+  color: blue;
+  border-color: cornflowerblue;
+}
+main #product-details-wrapper .product-details-inner .product-details-des .pro-type-size {
+  font-size: 17px;
+  margin-top: 15px;
+  display: flex;
+}
+main #product-details-wrapper .product-details-inner .product-details-des .pro-type-size .type-title {
+  font-weight: 600;
+  display: inline-block;
+  min-width: 120px;
+}
+main #product-details-wrapper .product-details-inner .product-details-des .pro-type-size .shoes-size {
+  width: 58%;
+}
+main #product-details-wrapper .product-details-inner .product-details-des .pro-type-size .shoes-size input {
+  overflow: hidden;
+  position: absolute;
+  height: 1px;
+  width: 1px;
+}
+main #product-details-wrapper .product-details-inner .product-details-des .pro-type-size .shoes-size label {
+  border: 1px solid;
+  border-radius: 4rem;
+  color: blue;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0.7rem 0.5rem 0.2rem 0;
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  line-height: 1;
+  text-align: center;
+  transition: border 1s ease;
+  cursor: pointer;
+}
+main #product-details-wrapper .product-details-inner .product-details-des .pro-type-size .shoes-size input[type=radio]:checked + label {
+  color: red;
+  border: 1px solid red;
+  position: relative;
 }
 
 footer .container {
