@@ -645,6 +645,7 @@ main #shoes-main .product-shops .card {
   border: none;
   font-family: "Poppins", sans-serif;
   width: 100% !important;
+  height: 450px;
 }
 main #shoes-main .product-shops .card:hover .product-hover {
   opacity: 1;
@@ -656,6 +657,7 @@ main #shoes-main .product-shops .card .product-hover {
   position: relative;
   opacity: 0;
   visibility: hidden;
+  margin-top: 5%;
 }
 main #shoes-main .product-shops .card .product-hover button {
   width: 35px;

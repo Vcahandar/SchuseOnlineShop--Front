@@ -923,6 +923,7 @@ main {
                 border: none;
                 font-family: 'Poppins', sans-serif;
                 width: 100% !important;
+                height: 450px;
 
 
                 &:hover .product-hover {
@@ -936,6 +937,7 @@ main {
                     position: relative;
                     opacity: 0;
                     visibility: hidden;
+                    margin-top: 5%;
 
                     button {
                         width: 35px;
