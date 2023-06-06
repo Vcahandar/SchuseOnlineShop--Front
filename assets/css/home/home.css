@@ -271,6 +271,9 @@ header #mobil-navbar .mobil-down-navbar {
 header #mobil-navbar .mobil-down-navbar .account-mob-icon {
   font-size: 24px;
 }
+header #mobil-navbar .mobil-down-navbar .account-mob-icon a {
+  color: #000;
+}
 header #mobil-navbar .mobil-down-navbar .line {
   margin-left: 8px;
   height: 22px;
@@ -282,6 +285,9 @@ header #mobil-navbar .mobil-down-navbar .line {
 header #mobil-navbar .mobil-down-navbar .basket-mob-icon {
   font-size: 22px;
   display: flex;
+}
+header #mobil-navbar .mobil-down-navbar .basket-mob-icon a {
+  color: #000;
 }
 header #mobil-navbar .mobil-down-navbar .basket-mob-icon .basket-count {
   font-size: 11px;
@@ -1024,7 +1030,7 @@ main #trending-product .slider {
 main #trending-product .slider .card {
   border: none;
   font-family: "Poppins", sans-serif;
-  width: 25rem !important;
+  width: 25rem;
 }
 main #trending-product .slider .card:hover .product-hover {
   opacity: 1;
@@ -1536,14 +1542,14 @@ footer .footer-content .info ul li a:hover {
     font-size: 13px;
   }
   #services-wrapper .service {
-    padding: 40px 10px;
-    height: 490px;
-    display: block;
-    text-align: center;
+    padding: 40px 10px !important;
+    height: 490px !important;
+    display: block !important;
+    text-align: center !important;
   }
   #services-wrapper .service .free-srvce {
-    display: block;
-    width: auto;
+    display: block !important;
+    width: auto !important;
     margin-bottom: 34px;
   }
   #services-wrapper .service .service-description {
@@ -1556,25 +1562,25 @@ footer .footer-content .info ul li a:hover {
     float: initial !important;
   }
   #services-wrapper .service .support {
-    display: block;
-    width: auto;
+    display: block !important;
+    width: auto !important;
     margin-bottom: 34px;
   }
   #services-wrapper .service .delivery {
-    display: block;
-    width: auto;
+    display: block !important;
+    width: auto !important;
     margin-bottom: 34px;
   }
   #services-wrapper .service .pig-bank {
-    display: block;
-    width: auto;
+    display: block !important;
+    width: auto !important;
     margin-bottom: 34px;
   }
   #trending-product .slider__item .card {
     width: 35rem !important;
   }
   #trending-product .slider__item .card .fa-eye {
-    display: none;
+    display: none !important;
   }
 }
 @media only screen and (max-width: 1200px) and (min-width: 760px) {

@@ -271,6 +271,9 @@ header #mobil-navbar .mobil-down-navbar {
 header #mobil-navbar .mobil-down-navbar .account-mob-icon {
   font-size: 24px;
 }
+header #mobil-navbar .mobil-down-navbar .account-mob-icon a {
+  color: #000;
+}
 header #mobil-navbar .mobil-down-navbar .line {
   margin-left: 8px;
   height: 22px;
@@ -282,6 +285,9 @@ header #mobil-navbar .mobil-down-navbar .line {
 header #mobil-navbar .mobil-down-navbar .basket-mob-icon {
   font-size: 22px;
   display: flex;
+}
+header #mobil-navbar .mobil-down-navbar .basket-mob-icon a {
+  color: #000;
 }
 header #mobil-navbar .mobil-down-navbar .basket-mob-icon .basket-count {
   font-size: 11px;

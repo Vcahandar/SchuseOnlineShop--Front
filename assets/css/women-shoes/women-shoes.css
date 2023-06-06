@@ -638,8 +638,8 @@ main #shoes-main .side-bar .product-sale-banner img {
 main #shoes-main .product-shops .form-select {
   font-weight: 600;
   height: 45px;
-  font-size: 14px;
-  width: 22%;
+  font-size: 16px;
+  width: 25%;
 }
 main #shoes-main .product-shops .card {
   border: none;
@@ -1039,4 +1039,4 @@ footer .footer-content .info ul li a {
 }
 footer .footer-content .info ul li a:hover {
   color: #ff871d;
-}/*# sourceMappingURL=shoes.css.map */
+}/*# sourceMappingURL=women-shoes.css.map */
