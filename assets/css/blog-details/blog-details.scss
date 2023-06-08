@@ -599,193 +599,64 @@ main {
         }
     }
 
+    #blog-area {
 
-
-    #cart-main {
-
-        .cart-table {
+        .blog-detail-item {
             font-family: 'Poppins', sans-serif;
-            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 
-            .empty-continue {
+            .blog-content {
 
-                .empty {
-                    text-align: center;
-                    padding: 20px;
-                }
+                .blog-create-time {
 
-                .continue {
-                    display: flex;
-                    justify-content: center;
-                    padding-bottom: 40px;
 
-                    .btn {
-                        outline: none;
-                        height: 60px;
-                        width: 220px;
-                        color: #fff;
-                        background-color: #ef6c00 !important;
+                    .aouthor {
+                        font-style: italic;
+                        font-size: 21px;
+                    }
+
+                    .date {
+                        font-style: italic;
                         font-weight: 600;
+                        font-size: 18px;
+                        margin-left: 10px;
                     }
-                }
-            }
 
-            .table {
-                user-select: none;
-
-                th {
-
-                    text-align: center;
                 }
 
-                tr {
-                    text-align: center;
-                }
-
-
-                .prdct-img {
-                    width: 110px;
-                    height: 110px;
-                    border: 1px solid lightgray;
-
-                    img {
-                        width: 100%;
-                    }
-                }
-
-                .td-img {
-                    width: 95px;
-                }
-
-                .td-name {
-                    padding-top: 30px;
-                    width: 184px;
+                .title-text {
+                    font-size: 40px;
                     font-weight: 700;
-                    text-align: center;
-
-                    .product-option {
-
-                        color: #666;
-                        font-weight: 400;
-                    }
                 }
-
-                .td-price {
-                    font-size: 23px;
-                    font-weight: 600;
-                    padding-top: 45px;
-
-                }
-
-                .td-count {
-
-                    padding-top: 33px;
-
-
-                    .number {
-                        margin: 0;
-                    }
-
-                    .minus,
-                    .plus {
-                        cursor: pointer;
-                        width: 20px;
-                        height: 52px;
-                        font-size: 35px;
-                        display: inline-block;
-                        vertical-align: middle;
-                        text-align: center;
-                    }
-
-                    input {
-                        height: 34px;
-                        width: 80px;
-                        text-align: center;
-                        font-size: 17px;
-                        border: 1px solid #ddd;
-                        border-radius: 4px;
-                        display: inline-block;
-                        vertical-align: middle;
-
-                    }
-                }
-
-                .td-total {
-                    padding-top: 45px;
-                    font-size: 23px;
-                    font-weight: 600;
-                    color: #f33927;
-                }
-
-                .delete {
-                    padding-top: 40px;
-                    font-size: 27px;
-                    cursor: pointer;
-                    color: red;
-                }
-
 
             }
 
-            .total-continue {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+            .short-desc {
+                font-size: 20px;
+                line-height: 30px;
+                margin-bottom: 50px;
+            }
 
-                .backShop {
+            .blog-img{
 
-                    button {
-                        margin-left: 8px;
-                        font-weight: 800;
-                        color: white;
-                        background-color: #ff871d;
-                        height: 45px;
-                        font-family: 'Poppins', sans-serif;
-                        outline: none;
-
-                        &:hover {
-                            background-color: black;
-                            color: white;
-                            border-color: black;
-                        }
-
-                    }
-
+                width: 75%;
+                img{
+                    width: 100%;
                 }
+            }
 
-                .total {
-                    font-size: 14px;
-                    font-weight: 600;
-                    margin-right: 10px;
-                    padding-bottom: 10px;
-                    align-items: center;
-                    gap: 35px;
+            .back-button{
 
-                    .btn {
-                        font-weight: 800;
-                        color: white;
-                        background-color: black;
-                        height: 55px;
-                        font-family: 'Poppins', sans-serif;
-                        outline: none;
-                        border-color: black;
-
-                        &:hover{
-
-                            background-color: #ff871d;
-                            color: white;
-                            border-color: #ff871d;
-                        }
+                a{
+                    text-decoration: none;
+                    font-size: 20px;
+                    &:hover{
+                        color: #ff871d;
                     }
-
                 }
             }
         }
     }
 }
-
-
-
 
 
 footer {
@@ -861,48 +732,3 @@ footer {
     }
 
 }
-
-
-@media only screen and (max-width: 767px) and (min-width: 350px) {
-
-    #mobil-navbar {
-        
-        .mobil-down-navbar {
-            margin-left: 100px !important;
-        }
-
-        .search-box {
-            margin-left: 27px !important;
-        }
-
-        .down{
-
-            .nav-logo{
-                width: auto !important;
-            }
-        }
-    }
-
-    #top-column-content{
-
-        .title{
-            h2{
-                font-size: 24px !important;
-            }
-        }
-    }
-
-    #cart-main{
-
-        .cart-main{
-
-            .table{
-
-                
-            }
-        }
-    }
-
-
- 
- }

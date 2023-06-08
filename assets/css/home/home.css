@@ -262,7 +262,7 @@ header #mobil-navbar .mobil-up-navbar .dropdown .show {
   font-size: 14px;
 }
 header #mobil-navbar .mobil-down-navbar {
-  margin-left: 73px;
+  margin-left: 87px;
   display: flex;
   align-items: center;
   margin-top: 13px;
@@ -457,32 +457,36 @@ main #main-slider .slider .sldr .shopNow-btn {
     height: 25px !important;
   }
 }
-@media only screen and (max-width: 992px) and (min-width: 768px) {
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
   main #main-slider body {
     width: 100%;
   }
-  main #main-slider h4 {
-    display: none !important;
+  main #main-slider .title {
+    font-weight: 600 !important;
+    /* width: 236px; */
+    top: 40px !important;
+    right: 78px !important;
+    display: flex !important;
+    font-size: 15px !important;
   }
   main #main-slider .heading {
-    font-size: 22px !important;
-    position: absolute !important;
-    top: 7% !important;
-    right: 15% !important;
+    margin-right: 9% !important;
+    font-weight: 400 !important;
+    font-size: 37px !important;
+    top: 70px !important;
   }
   main #main-slider .desc {
-    position: absolute !important;
-    top: 18% !important;
-    font-size: 25px !important;
-    right: 17% !important;
+    right: 24% !important;
+    font-size: 36px !important;
+    top: 114px !important;
   }
-  main #main-slider button {
-    position: absolute !important;
-    top: 50% !important;
-    right: 21% !important;
-    width: 99px !important;
-    font-size: 12px !important;
-    height: 30px !important;
+  main #main-slider .shopNow-btn {
+    border-radius: 7px !important;
+    font-size: 15px !important;
+    width: 130px !important;
+    right: 29% !important;
+    height: 40px !important;
+    margin-top: 11px;
   }
 }
 main #shopify-section .container {
@@ -1363,8 +1367,7 @@ main #newsletter .subscribe .news-input button:hover {
     text-align: center;
   }
   main #newsletter .subscribe .news-input {
-    width: 90%;
-    margin-left: 22px;
+    padding: 11px;
   }
   main #newsletter .subscribe .news-input input {
     height: 44px;
@@ -1527,7 +1530,13 @@ footer .footer-content .info ul li a:hover {
   transform: scale(1.05);
 }
 
-@media only screen and (max-width: 850px) and (min-width: 350px) {
+@media only screen and (max-width: 767px) and (min-width: 350px) {
+  #mobil-navbar .mobil-down-navbar {
+    margin-left: 70%;
+  }
+  #mobil-navbar .search-box {
+    margin-left: 16px;
+  }
   #shopify-section .banner-description {
     position: absolute;
     left: 25px;
@@ -1543,7 +1552,7 @@ footer .footer-content .info ul li a:hover {
   }
   #services-wrapper .service {
     padding: 40px 10px !important;
-    height: 490px !important;
+    height: auto !important;
     display: block !important;
     text-align: center !important;
   }
@@ -1583,15 +1592,19 @@ footer .footer-content .info ul li a:hover {
     display: none !important;
   }
 }
-@media only screen and (max-width: 1200px) and (min-width: 760px) {
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
   #mobil-navbar .mobil-down-navbar {
-    margin-left: 70%;
+    margin-right: 15px;
+    justify-content: flex-end;
   }
   #mobil-navbar .sidebar-mob-navbar {
     width: 100%;
     align-items: center;
     justify-content: space-between;
     display: flex;
+  }
+  #mobil-navbar .sidebar-mob-navbar .search-box {
+    margin-left: 40px !important;
   }
   #shopify-section .shopify-mob {
     width: 50%;
@@ -1610,9 +1623,30 @@ footer .footer-content .info ul li a:hover {
     font-size: 13px;
   }
   #services-wrapper .service {
-    display: flex;
-    height: 30%;
-    justify-content: space-around;
+    padding: 40px 10px !important;
+    height: auto !important;
+  }
+  #services-wrapper .service .free-srvce {
+    display: block !important;
+    text-align: center !important;
+  }
+  #services-wrapper .service .support {
+    display: block !important;
+    text-align: center !important;
+  }
+  #services-wrapper .service .delivery {
+    display: block !important;
+    text-align: center !important;
+  }
+  #services-wrapper .service .pig-bank {
+    display: block !important;
+    text-align: center !important;
+  }
+  #services-wrapper .service .service-description {
+    line-height: normal !important;
+  }
+  #services-wrapper .service .service-description .dscrptn {
+    float: none !important;
   }
   #trending-product .slider__item .card {
     width: 20rem !important;

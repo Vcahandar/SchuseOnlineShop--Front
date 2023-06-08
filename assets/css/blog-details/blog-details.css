@@ -382,7 +382,7 @@ header #mobil-navbar .down .content-area .content-area-center li a {
 }
 
 main #top-column-content {
-  height: 160px;
+  height: 134px;
   background-color: #f7f7f7;
   text-align: center;
   display: flex;
@@ -412,180 +412,40 @@ main #top-column-content .column-content .choose a:hover {
 main #top-column-content .column-content .choose span {
   cursor: pointer;
 }
-main #contact-text {
+main #blog-area .blog-detail-item {
   font-family: "Poppins", sans-serif;
 }
-main #contact-text .main-map {
-  margin-top: 35px;
-  padding: 20px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+main #blog-area .blog-detail-item .blog-content .blog-create-time .aouthor {
+  font-style: italic;
+  font-size: 21px;
 }
-main #contact-text .main-map iframe {
+main #blog-area .blog-detail-item .blog-content .blog-create-time .date {
+  font-style: italic;
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 10px;
+}
+main #blog-area .blog-detail-item .blog-content .title-text {
+  font-size: 40px;
+  font-weight: 700;
+}
+main #blog-area .blog-detail-item .short-desc {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 50px;
+}
+main #blog-area .blog-detail-item .blog-img {
+  width: 75%;
+}
+main #blog-area .blog-detail-item .blog-img img {
   width: 100%;
 }
-main #contact-text .main-map .title-text {
-  display: flex;
-  gap: 15px;
-  margin-top: 30px;
-}
-main #contact-text .main-map .title-text .left-text {
-  width: 50%;
-}
-main #contact-text .main-map .title-text .left-text .icon-text {
-  display: flex;
-  gap: 15px;
-  margin-top: 30px;
-  align-items: center;
-}
-main #contact-text .main-map .title-text .left-text .icon-text .content {
-  margin-left: 20px;
-}
-main #contact-text .main-map .title-text .left-text .icon-text i {
-  font-size: 30px;
-  color: #2a2928;
-}
-main #contact-text .main-map .title-text .left-text .icon-text .text {
-  width: 50%;
-}
-main #contact-text .main-map .title-text .left-text .icon-text .text hr {
-  width: 510px;
-  margin-left: -65px;
-}
-main #contact-text .main-map .title-text .left-text .icon-text .text h4 {
+main #blog-area .blog-detail-item .back-button a {
+  text-decoration: none;
   font-size: 20px;
 }
-main #contact-text .main-map .title-text .left-text .icon-text .text p {
-  font-family: inherit;
-  /* font-style: unset; */
-  color: #777;
-  font-weight: 400;
-}
-main #contact-text .main-map .title-text .right-text {
-  width: 50%;
-}
-main #contact-text .main-map .title-text .right-text .title-form .form {
-  margin-bottom: -20px;
-  margin-top: 60px;
-  /* LABEL ======================================= */
-  /* active state */
-  /* BOTTOM BARS ================================= */
-  /* active state */
-  /* HIGHLIGHTER ================================== */
-  /* active state */
-  /* ANIMATIONS ================ */
-}
-main #contact-text .main-map .title-text .right-text .title-form .form .group {
-  position: relative;
-  margin-bottom: 45px;
-}
-main #contact-text .main-map .title-text .right-text .title-form .form input,
-main #contact-text .main-map .title-text .right-text .title-form .form textarea {
-  font-size: 15px;
-  padding: 10px 10px 10px 5px;
-  display: block;
-  width: 100%;
-  border: none;
-  border-bottom: 1px solid #ef6c00;
-  outline: none;
-}
-main #contact-text .main-map .title-text .right-text .title-form .form input:focus ~ label, main #contact-text .main-map .title-text .right-text .title-form .form input:valid ~ label,
-main #contact-text .main-map .title-text .right-text .title-form .form textarea:focus ~ label,
-main #contact-text .main-map .title-text .right-text .title-form .form textarea:valid ~ label {
-  top: -8px;
-  font-size: 10px;
-}
-main #contact-text .main-map .title-text .right-text .title-form .form input:focus ~ .bar::before, main #contact-text .main-map .title-text .right-text .title-form .form input:focus ~ .bar::after,
-main #contact-text .main-map .title-text .right-text .title-form .form textarea:focus ~ .bar::before,
-main #contact-text .main-map .title-text .right-text .title-form .form textarea:focus ~ .bar::after {
-  width: 50%;
-}
-main #contact-text .main-map .title-text .right-text .title-form .form input:focus {
-  outline: none;
-}
-main #contact-text .main-map .title-text .right-text .title-form .form .textarea {
-  height: 110px;
-  padding: 10px 0 0 5px;
-  resize: none;
-}
-main #contact-text .main-map .title-text .right-text .title-form .form label {
-  color: #999;
-  font-size: 14px;
-  position: absolute;
-  pointer-events: none;
-  left: 5px;
-  top: 10px;
-  transition: 0.4s ease all;
-  -moz-transition: 0.2s ease all;
-  -webkit-transition: 0.2s ease all;
-}
-main #contact-text .main-map .title-text .right-text .title-form .form input:focus ~ label,
-main #contact-text .main-map .title-text .right-text .title-form .form input:valid ~ label {
-  top: -20px;
-  font-size: 14px;
-  color: #ef6c00;
-}
-main #contact-text .main-map .title-text .right-text .title-form .form textarea:focus ~ label,
-main #contact-text .main-map .title-text .right-text .title-form .form textarea:valid ~ label {
-  top: -20px;
-  font-size: 14px;
-  color: #ef6c00;
-}
-main #contact-text .main-map .title-text .right-text .title-form .form .bar {
-  position: relative;
-  display: block;
-  width: 100%;
-}
-main #contact-text .main-map .title-text .right-text .title-form .form .bar:before,
-main #contact-text .main-map .title-text .right-text .title-form .form .bar:after {
-  content: "";
-  height: 2px;
-  width: 0;
-  bottom: 1px;
-  position: absolute;
-  background: #ef6c00;
-  transition: 0.2s ease all;
-  -moz-transition: 0.2s ease all;
-  -webkit-transition: 0.2s ease all;
-}
-main #contact-text .main-map .title-text .right-text .title-form .form .bar:before {
-  left: 50%;
-}
-main #contact-text .main-map .title-text .right-text .title-form .form .bar:after {
-  right: 50%;
-}
-main #contact-text .main-map .title-text .right-text .title-form .form input:focus ~ .bar:before,
-main #contact-text .main-map .title-text .right-text .title-form .form input:focus ~ .bar:after {
-  width: 50%;
-}
-main #contact-text .main-map .title-text .right-text .title-form .form .highlight {
-  position: absolute;
-  height: 60%;
-  width: 100px;
-  top: 25%;
-  left: 0;
-  pointer-events: none;
-  opacity: 0.5;
-}
-main #contact-text .main-map .title-text .right-text .title-form .form input:focus ~ .highlight {
-  animation: inputHighlighter 0.3s ease;
-}
-@keyframes inputHighlighter {
-  from {
-    background: white;
-  }
-  to {
-    width: 0;
-    background: transparent;
-  }
-}
-main #contact-text .main-map .title-text .right-text .click-btn button {
-  border: none;
-  background-color: #ef6c00;
-  width: 110px;
-  font-size: 14px;
-  height: 50px;
-  font-weight: 700;
-  color: white;
+main #blog-area .blog-detail-item .back-button a:hover {
+  color: #ff871d;
 }
 
 footer .container {
@@ -637,63 +497,4 @@ footer .footer-content .info ul li a {
 }
 footer .footer-content .info ul li a:hover {
   color: #ff871d;
-}
-
-@media only screen and (max-width: 767px) and (min-width: 350px) {
-  #mobil-navbar .mobil-down-navbar {
-    margin-left: 70%;
-  }
-  #mobil-navbar .search-box {
-    margin-left: 27px !important;
-  }
-  #mobil-navbar .down .nav-logo {
-    width: auto !important;
-  }
-  #contact-text .main-map .title-text {
-    display: block !important;
-  }
-  #contact-text .main-map .title-text .left-text {
-    width: auto !important;
-  }
-  #contact-text .main-map .title-text .left-text .title h3 {
-    text-align: center;
-  }
-  #contact-text .main-map .title-text .left-text .icon-text {
-    display: block !important;
-  }
-  #contact-text .main-map .title-text .left-text .icon-text i {
-    display: block !important;
-    text-align: center;
-  }
-  #contact-text .main-map .title-text .left-text .icon-text .text {
-    margin-left: 0 !important;
-    width: 100% !important;
-  }
-  #contact-text .main-map .title-text .left-text .icon-text .text p {
-    text-align: center;
-  }
-  #contact-text .main-map .title-text .left-text .icon-text .text h4 {
-    text-align: center;
-  }
-  #contact-text .main-map .title-text .right-text {
-    margin-top: 70px;
-    width: auto !important;
-  }
-  #contact-text .main-map .title-text .right-text .title-form .title h3 {
-    text-align: center;
-  }
-}
-@media only screen and (max-width: 1200px) and (min-width: 760px) {
-  #mobil-navbar .mobil-down-navbar {
-    margin-left: 70%;
-  }
-  #mobil-navbar .sidebar-mob-navbar {
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    display: flex;
-  }
-  .footer-content {
-    display: contents;
-  }
-}/*# sourceMappingURL=contact.css.map */
+}/*# sourceMappingURL=blog-details.css.map */

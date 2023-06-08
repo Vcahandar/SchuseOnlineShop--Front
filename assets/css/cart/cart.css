@@ -599,4 +599,19 @@ footer .footer-content .info ul li a {
 }
 footer .footer-content .info ul li a:hover {
   color: #ff871d;
+}
+
+@media only screen and (max-width: 767px) and (min-width: 350px) {
+  #mobil-navbar .mobil-down-navbar {
+    margin-left: 100px !important;
+  }
+  #mobil-navbar .search-box {
+    margin-left: 27px !important;
+  }
+  #mobil-navbar .down .nav-logo {
+    width: auto !important;
+  }
+  #top-column-content .title h2 {
+    font-size: 24px !important;
+  }
 }/*# sourceMappingURL=cart.css.map */

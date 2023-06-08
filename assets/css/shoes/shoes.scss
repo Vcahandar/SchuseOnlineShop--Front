@@ -923,9 +923,7 @@ main {
                 border: none;
                 font-family: 'Poppins', sans-serif;
                 width: 100% !important;
-                height: 450px;
-
-
+                
                 &:hover .product-hover {
                     opacity: 1;
                     visibility: visible;
@@ -1424,6 +1422,7 @@ main {
 
 
 
+
 footer {
 
     .container {
@@ -1497,3 +1496,92 @@ footer {
     }
 
 }
+
+
+
+
+
+@media only screen and (max-width: 767px) and (min-width: 350px) {
+
+
+   
+    #mobil-navbar {
+        
+        .mobil-down-navbar {
+            margin-left: 70%;
+        }
+
+        .search-box {
+            margin-left: 27px !important;
+        }
+
+        .down{
+
+            .nav-logo{
+                width: auto !important;
+            }
+        }
+    }
+
+
+
+    #shoes-main{
+ 
+     .product-shops{
+ 
+         .form-select{
+ 
+             width: auto !important;
+         }
+     }
+ 
+    }
+ 
+ 
+ }
+ 
+ 
+ @media only screen and (max-width: 1200px) and (min-width: 768px) {
+ 
+     #mobil-navbar {
+ 
+         .mobil-down-navbar {
+             margin-right: 15px;
+             justify-content: flex-end;
+ 
+         }
+ 
+         .sidebar-mob-navbar {
+             width: 100%;
+             align-items: center;
+             justify-content: space-between;
+             display: flex;
+ 
+             .search-box {
+ 
+                 input[type=text]{
+                     width: 170px !important;
+                 }
+             }
+ 
+         }
+ 
+ 
+     }
+ 
+     #shoes-main{
+  
+      .product-shops{
+  
+          .form-select{
+  
+              width: auto !important;
+          }
+      }
+  
+     }
+ 
+     
+  
+  
+  }

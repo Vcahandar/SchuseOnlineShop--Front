@@ -938,36 +938,96 @@ footer {
 
 
 
-@media only screen and (max-width: 850px) and (min-width: 350px) {
+@media only screen and (max-width: 767px) and (min-width: 350px) {
+
+    #mobil-navbar {
+        
+        .mobil-down-navbar {
+            margin-left: 70%;
+        }
+
+        .search-box {
+            margin-left: 27px !important;
+        }
+
+        .down{
+
+            .nav-logo{
+                width: auto !important;
+            }
+        }
+    }
+
 
     #contact-text{
 
         .main-map{
 
             .title-text{
-
                 display: block !important;
+
+                .left-text{
+                    width: auto !important;
+
+                    .title{
+                        h3{
+                            text-align: center;
+                        }
+                    }
+
+                    .icon-text{
+
+                        display: block !important;
+
+                        i{
+                            display: block !important;
+                            text-align: center;
+                        }
+                        .text{
+
+                            margin-left: 0 !important;
+                            width: 100% !important;
+
+                            p{
+                                text-align: center;
+
+                            }
+
+                            h4{
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+
+                .right-text{
+                    margin-top: 70px;
+                    width: auto !important;
+
+                    .title-form{
+                        .title{
+                            h3{
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
             }
         }
 
-
-
-
     }
 
+ 
+ }
 
 
 
-   
-
-}
 
 
 @media only screen and (max-width: 1200px) and (min-width: 760px) {
 
 
     #mobil-navbar {
-
 
         .mobil-down-navbar {
 
@@ -980,84 +1040,17 @@ footer {
             align-items: center;
             justify-content: space-between;
             display: flex;
-
-
         }
 
 
     }
 
+    .footer-content{
 
-
-
-
-
-    #shopify-section {
-
-
-        .shopify-mob {
-            width: 50%;
-        }
-
-        .banner-description {
-            position: absolute;
-            left: 25px;
-            right: 25px;
-            padding: 20px 0 !important;
-        }
-
-        .title {
-            font-size: 21px !important;
-        }
-
-        .text-button {
-            margin-top: 0 !important;
-            font-size: 13px;
-        }
+        display: contents;
     }
 
 
-    #services-wrapper {
 
-        .service {
-
-            display: flex;
-            height: 30%;
-            justify-content: space-around;
-        }
-    }
-
-
-    #trending-product {
-
-        .slider__item {
-
-            .card {
-                width: 20rem !important;
-
-            }
-        }
-
-
-    }
-
-
-    #newsletter {
-
-        .news-input {
-            margin-left: 25% !important;
-        }
-    }
-
-
-    #brand {
-
-        padding-bottom: 80%;
-    }
-
-
-    .footer-content {
-        display: none;
-    }
 
 }
