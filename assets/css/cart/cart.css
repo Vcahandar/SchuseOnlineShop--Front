@@ -107,10 +107,13 @@ header #page-navbar .up-navbar .account-basket .icon {
   /* padding-bottom: 62px; */
   align-content: flex-start;
   align-items: center;
-  gap: 5px;
+  gap: 2px;
 }
 header #page-navbar .up-navbar .account-basket .icon i {
   color: #000;
+}
+header #page-navbar .up-navbar .account-basket .icon .wishlist-nav {
+  margin-left: 15px;
 }
 header #page-navbar .up-navbar .account-basket .icon .basket-count {
   font-size: 12px;
@@ -226,80 +229,43 @@ header #mobil-navbar {
 header #mobil-navbar .up {
   border-bottom: 1px solid lightgray;
 }
-header #mobil-navbar .mobil-up-navbar {
-  padding: 11px 0px 11px 7px;
-  width: 100%;
-}
-header #mobil-navbar .mobil-up-navbar .dropdown-menu {
-  --bs-dropdown-link-hover-bg: white;
-  --bs-dropdown-link-active-bg: orange;
-}
-header #mobil-navbar .mobil-up-navbar .dropdown-menu :hover {
-  color: #ff871d;
-}
-header #mobil-navbar .mobil-up-navbar .dropdown {
-  display: flex;
-  margin-left: 10px;
-  gap: 10px;
-  padding-top: 10px;
-  color: #666666;
-  font-size: 14px;
-  font-weight: 400;
-  align-items: center;
-}
-header #mobil-navbar .mobil-up-navbar .dropdown .basic :hover {
-  color: #ff871d;
-}
-header #mobil-navbar .mobil-up-navbar .dropdown .line {
-  margin-left: 8px;
-  height: 22px;
-  color: black;
-  width: 1px;
-  background: rgba(128, 128, 128, 0.4588235294);
-  margin-top: 1px;
-}
-header #mobil-navbar .mobil-up-navbar .dropdown .show {
-  font-size: 14px;
-}
-header #mobil-navbar .mobil-down-navbar {
-  margin-left: 73px;
+header #mobil-navbar .up .mobil-down-navbar {
   display: flex;
   align-items: center;
   margin-top: 13px;
-  gap: 7px;
+  justify-content: space-between;
 }
-header #mobil-navbar .mobil-down-navbar .account-mob-icon {
+header #mobil-navbar .up .mobil-down-navbar .account-mob-icon {
+  margin-left: 15px;
   font-size: 24px;
 }
-header #mobil-navbar .mobil-down-navbar .account-mob-icon a {
+header #mobil-navbar .up .mobil-down-navbar .account-mob-icon a {
   color: #000;
 }
-header #mobil-navbar .mobil-down-navbar .line {
-  margin-left: 8px;
+header #mobil-navbar .up .mobil-down-navbar .line {
   height: 22px;
   color: black;
   width: 1px;
   background: rgba(128, 128, 128, 0.4588235294);
-  margin-top: 1px;
 }
-header #mobil-navbar .mobil-down-navbar .basket-mob-icon {
+header #mobil-navbar .up .mobil-down-navbar .basket-mob-icon {
   font-size: 22px;
   display: flex;
 }
-header #mobil-navbar .mobil-down-navbar .basket-mob-icon a {
+header #mobil-navbar .up .mobil-down-navbar .basket-mob-icon a {
   color: #000;
 }
-header #mobil-navbar .mobil-down-navbar .basket-mob-icon .basket-count {
+header #mobil-navbar .up .mobil-down-navbar .basket-mob-icon .basket-count {
   font-size: 11px;
   width: 13px;
   height: 15px;
   background: #ff871d;
   text-align: center;
   border-radius: 50%;
-  margin-top: 4px;
-  margin-left: 5px;
+  margin-left: 2px;
+  margin-right: 10px;
 }
-header #mobil-navbar .mobil-down-navbar .basket-mob-icon .basket-count span {
+header #mobil-navbar .up .mobil-down-navbar .basket-mob-icon .basket-count span {
   font-weight: 600;
   color: white;
 }
@@ -601,9 +567,6 @@ footer .footer-content .info ul li a:hover {
 }
 
 @media only screen and (max-width: 767px) and (min-width: 350px) {
-  #mobil-navbar .mobil-down-navbar {
-    margin-left: 49% !important;
-  }
   #mobil-navbar .search-box {
     margin-left: 27px !important;
   }

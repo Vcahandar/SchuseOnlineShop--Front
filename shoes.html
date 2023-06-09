@@ -75,8 +75,6 @@
                                 </a>
                                 <ul class="dropdown-menu language">
                                     <li><a class="dropdown-item eng" href="./login.html"><span>Log In</span></a></li>
-                                    <li><a class="dropdown-item grm" href="./wishlist.html"><span> Wishlist
-                                                (2)</span></a>
                                     </li>
                                 </ul>
 
@@ -85,7 +83,11 @@
                                     <a href="./cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
                                     <div class="basket-count">
                                         <span>0</span>
-
+                                    </div>
+                                    <a class="wishlist-nav" href="./wishlist.html"><i
+                                            class="fa-regular fa-bookmark"></i></a>
+                                    <div class="basket-count">
+                                        <span>0</span>
                                     </div>
                                 </div>
 
@@ -146,38 +148,7 @@
 
             <div class="up">
                 <div class="nvb d-flex">
-                    <div class="col-6">
-                        <div class="mobil-up-navbar">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle language basic" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    <span> English</span>
-                                </a>
-                                <ul class="dropdown-menu language">
-                                    <li><a class="dropdown-item eng" href="#"><span>English</span></a></li>
-                                    <li><a class="dropdown-item grm" href="#"><span> Germany</span></a>
-                                    </li>
-                                    <li><a class="dropdown-item fr" href="#"><span> France</span></a></li>
-
-                                </ul>
-                                <div class="line"></div>
-
-                                <a class="nav-link dropdown-toggle usd basic" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    <span>USD $</span>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item usd-frst " href="#"><span>United States (USD
-                                                $)</span></a>
-                                    </li>
-                                    <li><a class="dropdown-item eur" href="#"><span>Europe (EUR €)</span></a></li>
-                                </ul>
-
-                            </li>
-                        </div>
-                    </div>
-
-                    <div class="col-6">
+                    <div class="col-12">
                         <div class="mobil-down-navbar">
                             <div class="account-mob-icon">
                                 <a href="./login.html"><i class="fa-regular fa-user"></i></a>
@@ -185,6 +156,11 @@
                             <div class="line"></div>
                             <div class="basket-mob-icon">
                                 <a href="./cart.html"><i class="fa-solid fa-basket-shopping"></i></a>
+                                <div class="basket-count">
+                                    <span>0</span>
+                                </div>
+                                <a class="wishlist-nav" href="./wishlist.html"><i
+                                        class="fa-regular fa-bookmark"></i></a>
                                 <div class="basket-count">
                                     <span>0</span>
                                 </div>
@@ -204,24 +180,24 @@
                             <i class="fa-solid fa-bars"></i>
                         </div>
                     </div>
-                   <div class="col-5">
-                    <div class="nav-logo">
-                        <img src="./assets/img/home/logo_200x.webp" alt="">
-                    </div>
-                   </div>
-                   
-
-                   <div class="col-4">
-                    <div class="search-mob-icon">
-                        <div class="search-box">
-                            <input type="text" placeholder="Search here" />
-                            <button type="submit">
-                                <i class="bx bx-search search-icon"></i>
-                            </button>
+                    <div class="col-5">
+                        <div class="nav-logo">
+                            <img src="./assets/img/home/logo_200x.webp" alt="">
                         </div>
                     </div>
-                   </div>
-                   
+
+
+                    <div class="col-4">
+                        <div class="search-mob-icon">
+                            <div class="search-box">
+                                <input type="text" placeholder="Search here" />
+                                <button type="submit">
+                                    <i class="bx bx-search search-icon"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
 
 
                 </div>
@@ -256,7 +232,6 @@
             </div>
         </section>
     </header>
-
 
     <main>
 
@@ -297,7 +272,7 @@
                                 </div>
                             </div>
                             <div class="line"></div>
-                           <div class="product-price">
+                            <div class="product-price">
                                 <div class="price-title">
                                     <h3>Filter By Price</h3>
                                 </div>
@@ -326,7 +301,7 @@
 
 
                                 </div>
-                            </div> 
+                            </div>
 
                             <div class="product-brand">
                                 <div class="tags-title">
@@ -457,9 +432,9 @@
                                     <div class="col-lg-4 col-md-6">
                                         <div class="card" data-id="1" style="width: 18rem;">
                                             <div class="produc-imgs">
-                                                <img src="./assets/img/home/product9-2.webp" class="card-img-top basic"
+                                                <img src="./assets/img/home/product10-1.webp" class="card-img-top basic"
                                                     alt="...">
-                                                <img src="./assets/img/home/product9-1.webp" class="card-img-top top"
+                                                <img src="./assets/img/home/product10-2.webp" class="card-img-top top"
                                                     alt="...">
                                             </div>
                                             <div class="discount">
@@ -468,7 +443,7 @@
 
                                             <div class="product-hover d-flex">
                                                 <button type="submit">
-                                                    <i class="fa-regular fa-heart"></i>
+                                                    <i class="fa-regular fa-bookmark"></i>
                                                 </button>
                                                 <button type="submit" class="d-lg-block d-none">
                                                     <i class="fa-regular fa-eye"></i>
@@ -964,7 +939,7 @@
                                                 </div>
                                                 <div class="prod-tittle">
                                                     <h2>Wild Taps Sneakers</h2>
-            
+
                                                 </div>
                                                 <div class="price-discount">
                                                     <div class="discount">
@@ -974,19 +949,20 @@
                                                         <p></p>
                                                     </div>
                                                 </div>
-            
+
                                                 <div class="border">
-            
+
                                                 </div>
                                                 <div class="text3">
                                                     <p></p>
                                                 </div>
                                                 <div class="pro-description">
-                                                    <p>Stylish and comfortable this printed chemise is designed with short sleeves
+                                                    <p>Stylish and comfortable this printed chemise is designed with
+                                                        short sleeves
                                                         and a round neckline. Elegant and comfy, this embroidered
                                                         A-line dress which has a round neck, and three-</p>
                                                 </div>
-            
+
                                                 <div class="pro-category">
                                                     <div class="category-name">
                                                         <span class="type">Type</span>
@@ -994,7 +970,7 @@
                                                             : sandal
                                                         </span>
                                                     </div>
-            
+
                                                     <div class="category-name">
                                                         <span class="type">Vendor</span>
                                                         <span class="type-name">
@@ -1007,7 +983,7 @@
                                                             : AP-888
                                                         </span>
                                                     </div>
-            
+
                                                     <div class="category-name">
                                                         <span class="type">Size</span>
                                                         <select id="size">
@@ -1015,9 +991,9 @@
                                                             <option value="L">L</option>
                                                             <option value="M">M</option>
                                                         </select>
-            
+
                                                     </div>
-            
+
                                                     <div class="category-name">
                                                         <span class="type">Color</span>
                                                         <select id="size">
@@ -1025,7 +1001,7 @@
                                                             <option value="Black">Black</option>
                                                             <option value="Pink">Pink</option>
                                                         </select>
-            
+
                                                     </div>
                                                     <div class="input-icon">
                                                         <div class="inputs">
@@ -1035,27 +1011,27 @@
                                                                 <span class="plus">+</span>
                                                             </div>
                                                         </div>
-            
+
                                                     </div>
-            
+
                                                     <div class="box">
                                                         <button class="button">
                                                             <span>Add To Cart</span>
                                                         </button>
                                                     </div>
-            
+
                                                     <div class="prod-detail">
                                                         <a href="">View Full Product Details</a>
                                                     </div>
-            
+
                                                 </div>
                                             </div>
                                         </div>
-            
+
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="pagination-shoes">
                                 <nav class="pagination-container">
                                     <div class="pagination">

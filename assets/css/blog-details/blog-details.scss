@@ -143,12 +143,16 @@ header {
                     /* padding-bottom: 62px; */
                     align-content: flex-start;
                     align-items: center;
-                    gap: 5px;
+                    gap: 2px;
 
                     i {
                         color: #000;
                     }
 
+                    .wishlist-nav {
+
+                        margin-left: 15px;
+                    }
 
                     .basket-count {
                         font-size: 12px;
@@ -310,115 +314,63 @@ header {
 
         .up {
             border-bottom: 1px solid lightgray;
-        }
 
+            .mobil-down-navbar {
 
-        .mobil-up-navbar {
-            padding: 11px 0px 11px 7px;
-            width: 100%;
-
-            .dropdown-menu {
-                --bs-dropdown-link-hover-bg: white;
-                --bs-dropdown-link-active-bg: orange;
-
-                :hover {
-                    color: #ff871d;
-                }
-            }
-
-
-            .dropdown {
                 display: flex;
-                margin-left: 10px;
-                gap: 10px;
-                padding-top: 10px;
-                color: #666666;
-                font-size: 14px;
-                font-weight: 400;
                 align-items: center;
+                margin-top: 13px;
+                justify-content: space-between;
 
-                .basic {
+                .account-mob-icon {
+                    margin-left: 15px;
+                    font-size: 24px;
 
-                    :hover {
-                        color: #ff871d;
+                    a {
+                        color: #000;
                     }
 
                 }
 
                 .line {
-                    margin-left: 8px;
+
                     height: 22px;
                     color: black;
                     width: 1px;
                     background: #80808075;
-                    margin-top: 1px;
-                }
-
-                .show {
-                    font-size: 14px;
-
                 }
 
 
-            }
-        }
+                .basket-mob-icon {
+                    font-size: 22px;
+                    display: flex;
 
-        .mobil-down-navbar {
-
-            margin-left: 73px;
-            display: flex;
-            align-items: center;
-            margin-top: 13px;
-            gap: 7px;
-
-
-            .account-mob-icon {
-
-                font-size: 24px;
-
-                a {
-                    color: #000;
-                }
-
-            }
-
-            .line {
-
-                margin-left: 8px;
-                height: 22px;
-                color: black;
-                width: 1px;
-                background: #80808075;
-                margin-top: 1px;
-            }
-
-
-            .basket-mob-icon {
-                font-size: 22px;
-                display: flex;
-
-                a {
-                    color: #000;
-                }
-
-                .basket-count {
-                    font-size: 11px;
-                    width: 13px;
-                    height: 15px;
-                    background: #ff871d;
-                    text-align: center;
-                    border-radius: 50%;
-                    margin-top: 4px;
-                    margin-left: 5px;
-
-                    span {
-                        font-weight: 600;
-                        color: white;
+                    a {
+                        color: #000;
                     }
-                }
 
+                    .basket-count {
+                        font-size: 11px;
+                        width: 13px;
+                        height: 15px;
+                        background: #ff871d;
+                        text-align: center;
+                        border-radius: 50%;
+                        margin-left: 2px;
+                        margin-right: 10px;
+
+                        span {
+                            font-weight: 600;
+                            color: white;
+                        }
+                    }
+
+                }
             }
         }
+
+
+
 
 
         .down {
@@ -447,6 +399,7 @@ header {
                 .search-mob-icon {
 
                     display: flex;
+
                     .search-box {
                         display: flex;
                         align-items: center;
@@ -547,6 +500,10 @@ header {
 
 
 }
+
+
+
+
 
 main {
 
