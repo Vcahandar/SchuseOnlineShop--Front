@@ -608,9 +608,15 @@ main {
                 border: 1px solid #6666665e;
                 box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 
-                img {
+                // img {
+                //     width: 100%;
+                // }
+
+                video{
                     width: 100%;
                 }
+
+
 
             }
 
@@ -647,21 +653,21 @@ main {
                 .slider__item {
                     padding: 6px;
                     border: 1px solid #80808059;
-                    height: 176px !important;
+                    height: 165px !important;
                     margin-top: 7px;
                     margin-left: 3px;
                     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
                     flex: 0 0 auto;
-                    width: 31% !important;
+                    width: 35% !important;
 
                     img {
                         cursor: pointer;
-                        padding: 12px;
                         -webkit-user-drag: none;
                         -khtml-user-drag: none;
                         -moz-user-drag: none;
                         -o-user-drag: none;
                         user-select: none;
+                        height: 100%;
                     }
                 }
 

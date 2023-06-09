@@ -419,7 +419,7 @@ main #product-details-wrapper .product-details-inner .product-img {
   border: 1px solid rgba(102, 102, 102, 0.368627451);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
-main #product-details-wrapper .product-details-inner .product-img img {
+main #product-details-wrapper .product-details-inner .product-img video {
   width: 100%;
 }
 main #product-details-wrapper .product-details-inner .small-carousel {
@@ -446,16 +446,15 @@ main #product-details-wrapper .product-details-inner .small-carousel .slider__co
 main #product-details-wrapper .product-details-inner .small-carousel .slider__item {
   padding: 6px;
   border: 1px solid rgba(128, 128, 128, 0.3490196078);
-  height: 176px !important;
+  height: 165px !important;
   margin-top: 7px;
   margin-left: 3px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
   flex: 0 0 auto;
-  width: 31% !important;
+  width: 35% !important;
 }
 main #product-details-wrapper .product-details-inner .small-carousel .slider__item img {
   cursor: pointer;
-  padding: 12px;
   -webkit-user-drag: none;
   -khtml-user-drag: none;
   -moz-user-drag: none;
@@ -463,6 +462,7 @@ main #product-details-wrapper .product-details-inner .small-carousel .slider__it
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  height: 100%;
 }
 main #product-details-wrapper .product-details-inner .small-carousel .slider__container[data-step="4"] .slider__item {
   width: 25%;
