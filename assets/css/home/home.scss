@@ -365,11 +365,12 @@ header {
 
         .mobil-down-navbar {
 
-            margin-left: 87px;
+            margin-left: 73px;
             display: flex;
             align-items: center;
             margin-top: 13px;
             gap: 7px;
+
 
             .account-mob-icon {
 
@@ -423,15 +424,11 @@ header {
         .down {
 
             height: 66px;
-            display: flex;
-            align-items: center;
-            padding: 0 10px 0 10px;
+            padding: 20px 11px;
 
 
             .sidebar-mob-navbar {
                 display: flex;
-                gap: 30px;
-                align-items: center;
 
                 .hamburger-icon {
                     font-size: 22px;
@@ -449,6 +446,7 @@ header {
 
                 .search-mob-icon {
 
+                    display: flex;
                     .search-box {
                         display: flex;
                         align-items: center;
@@ -543,10 +541,11 @@ header {
 
         }
 
- 
-
 
     }
+
+
+
 }
 
 
@@ -2237,7 +2236,7 @@ footer {
 
     #mobil-navbar {
         .mobil-down-navbar {
-            margin-left: 70%;
+            margin-left: 49% !important;
         }
 
         .search-box {

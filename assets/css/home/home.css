@@ -262,7 +262,7 @@ header #mobil-navbar .mobil-up-navbar .dropdown .show {
   font-size: 14px;
 }
 header #mobil-navbar .mobil-down-navbar {
-  margin-left: 87px;
+  margin-left: 73px;
   display: flex;
   align-items: center;
   margin-top: 13px;
@@ -305,14 +305,10 @@ header #mobil-navbar .mobil-down-navbar .basket-mob-icon .basket-count span {
 }
 header #mobil-navbar .down {
   height: 66px;
-  display: flex;
-  align-items: center;
-  padding: 0 10px 0 10px;
+  padding: 20px 11px;
 }
 header #mobil-navbar .down .sidebar-mob-navbar {
   display: flex;
-  gap: 30px;
-  align-items: center;
 }
 header #mobil-navbar .down .sidebar-mob-navbar .hamburger-icon {
   font-size: 22px;
@@ -323,6 +319,9 @@ header #mobil-navbar .down .sidebar-mob-navbar .nav-logo {
 }
 header #mobil-navbar .down .sidebar-mob-navbar .nav-logo img {
   width: 100%;
+}
+header #mobil-navbar .down .sidebar-mob-navbar .search-mob-icon {
+  display: flex;
 }
 header #mobil-navbar .down .sidebar-mob-navbar .search-mob-icon .search-box {
   display: flex;
@@ -1532,7 +1531,7 @@ footer .footer-content .info ul li a:hover {
 
 @media only screen and (max-width: 767px) and (min-width: 350px) {
   #mobil-navbar .mobil-down-navbar {
-    margin-left: 70%;
+    margin-left: 49% !important;
   }
   #mobil-navbar .search-box {
     margin-left: 16px;
