@@ -687,3 +687,44 @@ footer {
     }
 
 }
+
+
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
+
+    #mobil-navbar {
+
+        .mobil-down-navbar {
+            margin-right: 15px;
+            justify-content: flex-end;
+
+        }
+
+        .sidebar-mob-navbar {
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            display: flex;
+
+       
+
+            .search-mob-icon{
+                justify-content: flex-end;
+
+                .search-box{
+                    display: block !important;
+
+                    input{
+                        width: 160px !important;
+                    }
+                }
+
+            }
+
+        }
+
+
+    }
+ 
+
+ 
+ }

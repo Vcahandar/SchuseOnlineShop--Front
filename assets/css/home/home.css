@@ -1565,8 +1565,14 @@ footer .footer-content .info ul li a:hover {
     justify-content: space-between;
     display: flex;
   }
-  #mobil-navbar .sidebar-mob-navbar .search-box {
-    margin-left: 40px !important;
+  #mobil-navbar .sidebar-mob-navbar .search-mob-icon {
+    justify-content: flex-end;
+  }
+  #mobil-navbar .sidebar-mob-navbar .search-mob-icon .search-box {
+    display: block !important;
+  }
+  #mobil-navbar .sidebar-mob-navbar .search-mob-icon .search-box input {
+    width: 160px !important;
   }
   #shopify-section .shopify-mob {
     width: 50%;

@@ -2292,7 +2292,7 @@ footer {
 @media only screen and (max-width: 1200px) and (min-width: 768px) {
 
 
-   #mobil-navbar {
+    #mobil-navbar {
 
         .mobil-down-navbar {
             margin-right: 15px;
@@ -2306,113 +2306,124 @@ footer {
             justify-content: space-between;
             display: flex;
 
-            .search-box {
-                margin-left: 40px !important;
-            }
+       
 
-        }
+            .search-mob-icon{
+                justify-content: flex-end;
 
+                .search-box{
+                    display: block !important;
 
-    }
-
-
-    #shopify-section {
-
-
-        .shopify-mob {
-            width: 50%;
-        }
-
-        .banner-description {
-            position: absolute;
-            left: 25px;
-            right: 25px;
-            padding: 20px 0 !important;
-        }
-
-        .title {
-            font-size: 21px !important;
-        }
-
-        .text-button {
-            margin-top: 0 !important;
-            font-size: 13px;
-        }
-    }
-
-
-    #services-wrapper {
-
-        .service {
-            padding: 40px 10px !important;
-            height: auto !important;
-
-
-            .free-srvce {
-                display: block !important;
-                text-align: center !important;
-            }
-
-            .support {
-                display: block !important;
-                text-align: center !important;
-            }
-
-            .delivery {
-                display: block !important;
-                text-align: center !important;
-            }
-
-            .pig-bank {
-                display: block !important;
-                text-align: center !important;
-            }
-
-            .service-description {
-
-                line-height: normal !important;
-
-                .dscrptn {
-                    float: none !important;
+                    input{
+                        width: 160px !important;
+                    }
                 }
 
             }
 
-
         }
+
+
     }
 
 
-    #trending-product {
+        #shopify-section {
 
-        .slider__item {
 
-            .card {
-                width: 20rem !important;
+            .shopify-mob {
+                width: 50%;
+            }
+
+            .banner-description {
+                position: absolute;
+                left: 25px;
+                right: 25px;
+                padding: 20px 0 !important;
+            }
+
+            .title {
+                font-size: 21px !important;
+            }
+
+            .text-button {
+                margin-top: 0 !important;
+                font-size: 13px;
+            }
+        }
+
+
+        #services-wrapper {
+
+            .service {
+                padding: 40px 10px !important;
+                height: auto !important;
+
+
+                .free-srvce {
+                    display: block !important;
+                    text-align: center !important;
+                }
+
+                .support {
+                    display: block !important;
+                    text-align: center !important;
+                }
+
+                .delivery {
+                    display: block !important;
+                    text-align: center !important;
+                }
+
+                .pig-bank {
+                    display: block !important;
+                    text-align: center !important;
+                }
+
+                .service-description {
+
+                    line-height: normal !important;
+
+                    .dscrptn {
+                        float: none !important;
+                    }
+
+                }
+
 
             }
         }
 
 
-    }
+        #trending-product {
+
+            .slider__item {
+
+                .card {
+                    width: 20rem !important;
+
+                }
+            }
 
 
-    #newsletter {
-
-        .news-input {
-            margin-left: 25% !important;
         }
-    }
 
 
-    #brand {
+        #newsletter {
 
-        padding-bottom: 80%;
-    }
+            .news-input {
+                margin-left: 25% !important;
+            }
+        }
 
 
-    .footer-content {
-        display: none;
-    }
+        #brand {
 
-}
+            padding-bottom: 80%;
+        }
+
+
+        .footer-content {
+            display: none;
+        }
+
+ }

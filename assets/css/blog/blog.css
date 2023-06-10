@@ -504,6 +504,15 @@ footer .footer-content .info ul li a:hover {
     justify-content: space-between;
     display: flex;
   }
+  #mobil-navbar .sidebar-mob-navbar .search-mob-icon {
+    justify-content: flex-end;
+  }
+  #mobil-navbar .sidebar-mob-navbar .search-mob-icon .search-box {
+    display: block !important;
+  }
+  #mobil-navbar .sidebar-mob-navbar .search-mob-icon .search-box input {
+    width: 160px !important;
+  }
   .footer-content {
     display: none;
   }

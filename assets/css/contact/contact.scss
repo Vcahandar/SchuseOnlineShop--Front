@@ -976,8 +976,8 @@ footer {
     #mobil-navbar {
 
         .mobil-down-navbar {
-
-            margin-left: 70%;
+            margin-right: 15px;
+            justify-content: flex-end;
 
         }
 
@@ -986,11 +986,26 @@ footer {
             align-items: center;
             justify-content: space-between;
             display: flex;
+
+       
+
+            .search-mob-icon{
+                justify-content: flex-end;
+
+                .search-box{
+                    display: block !important;
+
+                    input{
+                        width: 160px !important;
+                    }
+                }
+
+            }
+
         }
 
 
     }
-
     .footer-content{
 
         display: contents;

@@ -581,18 +581,16 @@ main {
             .grid {
                 display: flex;
                 flex-flow: row wrap;
+                padding-top: 25px;
 
-                .col-8 {
-                    width: 66.7% !important;
+                .size-pag-8 {
+                    width: 66.7%;
                 }
 
                 .grid-lines {
 
                     position: relative;
-                    width: 100%;
                     display: block;
-
-
 
                     .principles-image-container {
                         margin-bottom: 48px;
@@ -636,7 +634,7 @@ main {
                 }
 
                 .col-4 {
-                    width: 33.3333333333% !important;
+                    width: 33%;
                 }
 
             }
@@ -903,7 +901,7 @@ main {
                 .social {
                     li.twitter {
                         a {
-                            background-color:#00b6f1;
+                            background-color: #00b6f1;
                         }
                     }
 
@@ -1018,5 +1016,99 @@ footer {
 
         }
     }
+
+}
+
+
+@media only screen and (max-width: 767px) and (min-width: 350px) {
+
+    #mobil-navbar {
+        .search-box {
+            margin-left: 16px;
+        }
+    }
+
+    #about-area {
+
+        .about-img-description {
+
+            padding: 0 !important;
+
+
+
+            .grid {
+
+                display: block !important;
+
+                .col-4 {
+                    width: auto !important;
+                }
+
+                .size-pag-8 {
+                    width: auto !important;
+                }
+
+                .principles-text {
+                    padding-bottom: 25px;
+                }
+
+            }
+        }
+
+        .about-team-area {
+
+            .team-area-title-desc {
+
+                .team-area-desc {
+                    padding: 0 !important;
+                }
+            }
+        }
+    }
+
+
+
+
+}
+
+
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
+
+
+    #mobil-navbar {
+
+        .mobil-down-navbar {
+            margin-right: 15px;
+            justify-content: flex-end;
+
+        }
+
+        .sidebar-mob-navbar {
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            display: flex;
+
+       
+
+            .search-mob-icon{
+                justify-content: flex-end;
+
+                .search-box{
+                    display: block !important;
+
+                    input{
+                        width: 160px !important;
+                    }
+                }
+
+            }
+
+        }
+
+
+    }
+
+
 
 }
