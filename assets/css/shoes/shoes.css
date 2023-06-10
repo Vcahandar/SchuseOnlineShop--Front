@@ -1056,4 +1056,10 @@ footer .footer-content .info ul li a:hover {
   #shoes-main .product-shops .form-select {
     width: auto !important;
   }
+  .footer-content {
+    padding-bottom: 67% !important;
+  }
+  .footer-content .info {
+    margin-top: auto !important;
+  }
 }/*# sourceMappingURL=shoes.css.map */

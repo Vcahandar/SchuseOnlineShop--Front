@@ -5,7 +5,7 @@ let overlay = document.querySelector(".overlay");
 
 icon.onclick = function () {
   var sidebar = document.querySelector(".content-area");
-  sidebar.style.width = "80%";  
+  sidebar.style.width = "65%";  
   sidebar.style.visibility = "visible";
   sidebar.style.opacity = "1";
 };
@@ -37,4 +37,25 @@ $(function(){
 
 })
 
+
+// ----count-plus-minis----
+$(document).ready(function() {
+  $('.minus').click(function () {
+    var $input = $(this).parent().find('input');
+    var count = parseInt($input.val()) - 1;
+    count = count < 1 ? 1 : count;
+    $input.val(count);
+    $input.change();
+    return false;
+  });
+  $('.plus').click(function () {
+    var $input = $(this).parent().find('input');
+    $input.val(parseInt($input.val()) + 1);
+    $input.change();
+    return false;
+  });
+});
+
+
+// -----------
 

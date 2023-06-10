@@ -585,7 +585,7 @@ main #about-area .about-team-area .team-area .info {
   padding: 40px 20px 20px;
   position: relative;
   text-align: center;
-  z-index: 9;
+  z-index: 1;
 }
 main #about-area .about-team-area .team-area .info .message {
   height: 50px;
@@ -736,5 +736,17 @@ footer .footer-content .info ul li a:hover {
   }
   #mobil-navbar .sidebar-mob-navbar .search-mob-icon .search-box input {
     width: 160px !important;
+  }
+  .team-area-title-desc .team-area-desc {
+    padding: 0 !important;
+  }
+  .thumb {
+    height: auto !important;
+  }
+  .footer-content {
+    padding-bottom: 67% !important;
+  }
+  .footer-content .info {
+    margin-top: auto !important;
   }
 }/*# sourceMappingURL=about.css.map */

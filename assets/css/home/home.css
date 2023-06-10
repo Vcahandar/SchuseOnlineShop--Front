@@ -1626,6 +1626,9 @@ footer .footer-content .info ul li a:hover {
     padding-bottom: 80%;
   }
   .footer-content {
-    display: none;
+    padding-bottom: 67% !important;
+  }
+  .footer-content .info {
+    margin-top: auto !important;
   }
 }/*# sourceMappingURL=home.css.map */

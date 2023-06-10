@@ -496,4 +496,10 @@ footer .footer-content .info ul li a:hover {
   #mobil-navbar .sidebar-mob-navbar .search-mob-icon .search-box input {
     width: 160px !important;
   }
+  .footer-content {
+    padding-bottom: 67% !important;
+  }
+  .footer-content .info {
+    margin-top: auto !important;
+  }
 }/*# sourceMappingURL=login.css.map */

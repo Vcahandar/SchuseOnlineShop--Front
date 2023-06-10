@@ -1015,4 +1015,10 @@ footer .footer-content .info ul li a:hover {
   #top-column-content {
     margin-top: 25px;
   }
+  .footer-content {
+    padding-bottom: 67% !important;
+  }
+  .footer-content .info {
+    margin-top: auto !important;
+  }
 }/*# sourceMappingURL=product-details.css.map */

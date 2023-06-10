@@ -5,7 +5,7 @@ let overlay = document.querySelector(".overlay");
 
 icon.onclick = function () {
   var sidebar = document.querySelector(".content-area");
-  sidebar.style.width = "80%";  
+  sidebar.style.width = "65%";  
   sidebar.style.visibility = "visible";
   sidebar.style.opacity = "1";
 };

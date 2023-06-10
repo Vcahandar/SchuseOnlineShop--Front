@@ -668,4 +668,31 @@ footer .footer-content .info ul li a:hover {
   .footer-content {
     display: contents;
   }
+}
+@media only screen and (max-width: 1200px) and (min-width: 760px) and (max-width: 1200px) and (min-width: 768px) {
+  #mobil-navbar .mobil-down-navbar {
+    margin-right: 15px;
+    justify-content: flex-end;
+  }
+  #mobil-navbar .sidebar-mob-navbar {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+  }
+  #mobil-navbar .sidebar-mob-navbar .search-mob-icon {
+    justify-content: flex-end;
+  }
+  #mobil-navbar .sidebar-mob-navbar .search-mob-icon .search-box {
+    display: block !important;
+  }
+  #mobil-navbar .sidebar-mob-navbar .search-mob-icon .search-box input {
+    width: 160px !important;
+  }
+  .footer-content {
+    padding-bottom: 67% !important;
+  }
+  .footer-content .info {
+    margin-top: auto !important;
+  }
 }/*# sourceMappingURL=contact.css.map */

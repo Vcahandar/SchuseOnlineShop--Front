@@ -849,7 +849,7 @@ main {
                     padding: 40px 20px 20px;
                     position: relative;
                     text-align: center;
-                    z-index: 9;
+                    z-index: 1;
 
                     .message {
                         height: 50px;
@@ -1106,6 +1106,27 @@ footer {
 
         }
 
+
+    }
+
+    .team-area-title-desc{
+
+        .team-area-desc{
+            padding: 0 !important; 
+        }
+    }
+
+    .thumb{
+        height: auto !important;
+    }
+
+    .footer-content{
+
+        padding-bottom: 67% !important;
+
+        .info{
+            margin-top: auto !important;
+        }
 
     }
 
