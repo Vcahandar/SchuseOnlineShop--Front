@@ -85,6 +85,7 @@ sliders.forEach((slider, i) => {
 
 
 
+
 $(document).ready(function () {
   $('.customer-logos').slick({
     slidesToShow: 6,
@@ -106,6 +107,22 @@ $(document).ready(function () {
       }
     }]
   });
+
+
+  //Bir-başa headerə qaytarn icon
+	// scroll to top
+	$(window).on('scroll', function () {
+		if ($(this).scrollTop() > 600) {
+			$('.scroll-top').removeClass('not-visible');
+		} else {
+			$('.scroll-top').addClass('not-visible');
+		}
+	});
+	$('.scroll-top').on('click', function (event) {
+		$('html,body').animate({
+			scrollTop: 0
+		}, 1000);
+	});
 });
 
 

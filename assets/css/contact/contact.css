@@ -389,168 +389,88 @@ main #contact-text .main-map iframe {
   width: 100%;
 }
 main #contact-text .main-map .title-text {
-  display: flex;
-  gap: 15px;
-  margin-top: 30px;
+  padding: 80px 0;
 }
-main #contact-text .main-map .title-text .left-text {
-  width: 50%;
+main #contact-text .main-map .title-text .contact-message .contact-title {
+  color: #333333;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 600;
+  margin-top: -4px;
+  text-transform: capitalize;
+  padding-bottom: 30px;
 }
-main #contact-text .main-map .title-text .left-text .icon-text {
-  display: flex;
-  gap: 15px;
-  margin-top: 30px;
-  align-items: center;
+main #contact-text .main-map .title-text .contact-message input {
+  width: 100%;
+  border: none;
+  padding: 10px 10px;
+  border-bottom: 3px solid transparent;
+  background-color: #f3f6f5;
+  margin-bottom: 30px;
+  outline: none;
 }
-main #contact-text .main-map .title-text .left-text .icon-text .content {
-  margin-left: 20px;
+main #contact-text .main-map .title-text .contact-message textarea {
+  width: 100%;
+  border: none;
+  padding: 10px 10px;
+  border-bottom: 3px solid transparent;
+  background-color: #f3f6f5;
+  margin-bottom: 30px;
+  height: 120px;
+  outline: none;
 }
-main #contact-text .main-map .title-text .left-text .icon-text i {
-  font-size: 30px;
-  color: #2a2928;
-}
-main #contact-text .main-map .title-text .left-text .icon-text .text {
-  width: 50%;
-}
-main #contact-text .main-map .title-text .left-text .icon-text .text hr {
-  width: 510px;
-  margin-left: -65px;
-}
-main #contact-text .main-map .title-text .left-text .icon-text .text h4 {
-  font-size: 20px;
-}
-main #contact-text .main-map .title-text .left-text .icon-text .text p {
-  font-family: inherit;
-  /* font-style: unset; */
-  color: #777;
+main #contact-text .main-map .title-text .contact-message .contact-btn .btn {
+  border-radius: 0;
+  font-size: 16px;
   font-weight: 400;
-}
-main #contact-text .main-map .title-text .right-text {
-  width: 50%;
-}
-main #contact-text .main-map .title-text .right-text .title-form .form {
-  margin-bottom: -20px;
-  margin-top: 60px;
-  /* LABEL ======================================= */
-  /* active state */
-  /* BOTTOM BARS ================================= */
-  /* active state */
-  /* HIGHLIGHTER ================================== */
-  /* active state */
-  /* ANIMATIONS ================ */
-}
-main #contact-text .main-map .title-text .right-text .title-form .form .group {
-  position: relative;
-  margin-bottom: 45px;
-}
-main #contact-text .main-map .title-text .right-text .title-form .form input,
-main #contact-text .main-map .title-text .right-text .title-form .form textarea {
-  font-size: 15px;
-  padding: 10px 10px 10px 5px;
-  display: block;
-  width: 100%;
-  border: none;
-  border-bottom: 1px solid #ef6c00;
+  line-height: 1;
+  color: #e3a51e;
   outline: none;
+  box-shadow: none;
+  transition: 0.4s;
+  display: inline-block;
+  padding: 14px 25px;
+  background-color: #333333;
+  text-transform: uppercase;
 }
-main #contact-text .main-map .title-text .right-text .title-form .form input:focus ~ label, main #contact-text .main-map .title-text .right-text .title-form .form input:valid ~ label,
-main #contact-text .main-map .title-text .right-text .title-form .form textarea:focus ~ label,
-main #contact-text .main-map .title-text .right-text .title-form .form textarea:valid ~ label {
-  top: -8px;
-  font-size: 10px;
+main #contact-text .main-map .title-text .contact-message .contact-btn .btn:hover {
+  color: #fff;
+  background-color: #e3a51e;
 }
-main #contact-text .main-map .title-text .right-text .title-form .form input:focus ~ .bar::before, main #contact-text .main-map .title-text .right-text .title-form .form input:focus ~ .bar::after,
-main #contact-text .main-map .title-text .right-text .title-form .form textarea:focus ~ .bar::before,
-main #contact-text .main-map .title-text .right-text .title-form .form textarea:focus ~ .bar::after {
-  width: 50%;
+main #contact-text .main-map .title-text .contact-info {
+  height: 100%;
 }
-main #contact-text .main-map .title-text .right-text .title-form .form input:focus {
-  outline: none;
+main #contact-text .main-map .title-text .contact-info .contact-title {
+  color: #333333;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 600;
+  margin-top: -4px;
+  text-transform: capitalize;
+  padding-bottom: 30px;
 }
-main #contact-text .main-map .title-text .right-text .title-form .form .textarea {
-  height: 110px;
-  padding: 10px 0 0 5px;
-  resize: none;
+main #contact-text .main-map .title-text .contact-info p {
+  color: #666666;
+  padding-bottom: 30px;
 }
-main #contact-text .main-map .title-text .right-text .title-form .form label {
-  color: #999;
-  font-size: 14px;
-  position: absolute;
-  pointer-events: none;
-  left: 5px;
-  top: 10px;
-  transition: 0.4s ease all;
-  -moz-transition: 0.2s ease all;
-  -webkit-transition: 0.2s ease all;
+main #contact-text .main-map .title-text .contact-info ul li {
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  list-style: none;
 }
-main #contact-text .main-map .title-text .right-text .title-form .form input:focus ~ label,
-main #contact-text .main-map .title-text .right-text .title-form .form input:valid ~ label {
-  top: -20px;
-  font-size: 14px;
-  color: #ef6c00;
+main #contact-text .main-map .title-text .contact-info ul li i {
+  font-size: 18px;
+  padding-right: 10px;
 }
-main #contact-text .main-map .title-text .right-text .title-form .form textarea:focus ~ label,
-main #contact-text .main-map .title-text .right-text .title-form .form textarea:valid ~ label {
-  top: -20px;
-  font-size: 14px;
-  color: #ef6c00;
+main #contact-text .main-map .title-text .contact-info .working-time h3 {
+  font-size: 16px;
+  font-weight: 600;
+  padding-bottom: 5px;
 }
-main #contact-text .main-map .title-text .right-text .title-form .form .bar {
-  position: relative;
-  display: block;
-  width: 100%;
-}
-main #contact-text .main-map .title-text .right-text .title-form .form .bar:before,
-main #contact-text .main-map .title-text .right-text .title-form .form .bar:after {
-  content: "";
-  height: 2px;
-  width: 0;
-  bottom: 1px;
-  position: absolute;
-  background: #ef6c00;
-  transition: 0.2s ease all;
-  -moz-transition: 0.2s ease all;
-  -webkit-transition: 0.2s ease all;
-}
-main #contact-text .main-map .title-text .right-text .title-form .form .bar:before {
-  left: 50%;
-}
-main #contact-text .main-map .title-text .right-text .title-form .form .bar:after {
-  right: 50%;
-}
-main #contact-text .main-map .title-text .right-text .title-form .form input:focus ~ .bar:before,
-main #contact-text .main-map .title-text .right-text .title-form .form input:focus ~ .bar:after {
-  width: 50%;
-}
-main #contact-text .main-map .title-text .right-text .title-form .form .highlight {
-  position: absolute;
-  height: 60%;
-  width: 100px;
-  top: 25%;
-  left: 0;
-  pointer-events: none;
-  opacity: 0.5;
-}
-main #contact-text .main-map .title-text .right-text .title-form .form input:focus ~ .highlight {
-  animation: inputHighlighter 0.3s ease;
-}
-@keyframes inputHighlighter {
-  from {
-    background: white;
-  }
-  to {
-    width: 0;
-    background: transparent;
-  }
-}
-main #contact-text .main-map .title-text .right-text .click-btn button {
-  border: none;
-  background-color: #ef6c00;
-  width: 110px;
-  font-size: 14px;
-  height: 50px;
-  font-weight: 700;
-  color: white;
+main #contact-text .main-map .title-text .contact-info .working-time span {
+  color: #333333;
+  padding-right: 10px;
 }
 
 footer .container {
@@ -602,6 +522,32 @@ footer .footer-content .info ul li a {
 }
 footer .footer-content .info ul li a:hover {
   color: #ff871d;
+}
+
+.scroll-top {
+  bottom: 50px;
+  cursor: pointer;
+  height: 40px;
+  position: fixed;
+  right: 20px;
+  text-align: center;
+  width: 40px;
+  z-index: 9999;
+  transition: 0.4s;
+  border-radius: 4px;
+  background-color: #e3a51e;
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+.scroll-top i {
+  line-height: 40px;
+  color: #fff;
+  font-size: 25px;
+}
+
+.scroll-top.not-visible {
+  bottom: -50px;
+  visibility: hidden;
+  opacity: 0;
 }
 
 @media only screen and (max-width: 767px) and (min-width: 350px) {

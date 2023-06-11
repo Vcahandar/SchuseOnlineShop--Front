@@ -1119,7 +1119,7 @@ main {
                     p {
                         font-size: 1.3em;
                         line-height: 1.6em;
-                        color: #76716f;
+                        color: black;
                     }
                 }
             }
@@ -1131,7 +1131,7 @@ main {
 
                     .blog-comment {
 
-                        background-color: #f6f7fb;
+                        background-color: rgb(179 182 229 / 46%);
                         border-radius: 15px;
                         margin-top: 45px;
                         padding-top: 60px;
@@ -1140,7 +1140,7 @@ main {
                         padding-bottom: 60px;
 
                         .heading {
-                            margin-bottom: 60px;
+                            margin-bottom: 10px;
                             line-height: 24px;
                             font-size: 30px;
                             color: #222121;
@@ -1160,19 +1160,19 @@ main {
                             }
 
                             .blog-comment-content {
-                                width: calc(100% - 115px);
+                                width: 88%;
                                 margin-left: 30px;
 
-                                .blog-comment-content .user-name {
-                                    color: #333333;
+                                .user-name {
+                                    color: black;
                                     font-weight: 400;
-                                    font-size: 24px;
+                                    font-size: 30px;
                                     line-height: 29px;
                                     margin-bottom: 5px;
                                 }
 
                                 .date {
-                                    color: #666666;
+                                    color: black;
                                     font-size: 14px;
                                     display: block;
                                     margin-bottom: 20px;
@@ -1202,7 +1202,7 @@ main {
 
                     .feedback-area {
 
-                        background-color: #f6f7fb;
+                        background-color: rgb(179 182 229 / 46%);
                         border-radius: 15px;
                         margin-top: 100px;
                         padding-top: 60px;
@@ -1385,6 +1385,37 @@ footer {
 }
 
 
+.scroll-top {
+    bottom: 50px;
+    cursor: pointer;
+    height: 40px;
+    position: fixed;
+    right: 20px;
+    text-align: center;
+    width: 40px;
+    z-index: 9999;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 4px;
+    background-color: #e3a51e;
+    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+
+    i {
+        line-height: 40px;
+        color: #fff;
+        font-size: 25px;
+      }
+  }
+  
+  .scroll-top.not-visible {
+    bottom: -50px;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+
 @media only screen and (max-width: 767px) and (min-width: 350px) {
 
     #mobil-navbar {
@@ -1423,6 +1454,45 @@ footer {
     #main-widget{
 
         margin-top: 22px;
+
+        .menu__wrapper{
+
+            padding: 0 !important;
+        }
+
+        .product-review-body{
+
+            .blog-comment{
+
+                padding: 15px 0 0 18px !important;
+
+                .heading{
+                    margin-bottom: 30px !important;
+                }
+
+                .blog-comment-item{
+                    display: block !important;
+
+                    .blog-comment-content{
+                        width: auto !important;
+                        margin-left: auto !important;
+
+                        .user-name{
+                            font-size: 24px !important;
+                        }
+
+                        .user-comment{
+                            line-height: 27px !important;
+                            font-size: 17px !important;
+                            padding-bottom: 24px;
+
+
+                        }
+
+                    }
+                }
+            }
+        }
     }
 
     .footer-content{

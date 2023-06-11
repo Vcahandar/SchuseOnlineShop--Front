@@ -1019,6 +1019,36 @@ footer {
 
 }
 
+.scroll-top {
+    bottom: 50px;
+    cursor: pointer;
+    height: 40px;
+    position: fixed;
+    right: 20px;
+    text-align: center;
+    width: 40px;
+    z-index: 9999;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 4px;
+    background-color: #e3a51e;
+    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+
+    i {
+        line-height: 40px;
+        color: #fff;
+        font-size: 25px;
+    }
+}
+
+.scroll-top.not-visible {
+    bottom: -50px;
+    visibility: hidden;
+    opacity: 0;
+}
+
 
 @media only screen and (max-width: 767px) and (min-width: 350px) {
 
@@ -1089,15 +1119,15 @@ footer {
             justify-content: space-between;
             display: flex;
 
-       
 
-            .search-mob-icon{
+
+            .search-mob-icon {
                 justify-content: flex-end;
 
-                .search-box{
+                .search-box {
                     display: block !important;
 
-                    input{
+                    input {
                         width: 160px !important;
                     }
                 }
@@ -1109,22 +1139,22 @@ footer {
 
     }
 
-    .team-area-title-desc{
+    .team-area-title-desc {
 
-        .team-area-desc{
-            padding: 0 !important; 
+        .team-area-desc {
+            padding: 0 !important;
         }
     }
 
-    .thumb{
+    .thumb {
         height: auto !important;
     }
 
-    .footer-content{
+    .footer-content {
 
         padding-bottom: 67% !important;
 
-        .info{
+        .info {
             margin-top: auto !important;
         }
 

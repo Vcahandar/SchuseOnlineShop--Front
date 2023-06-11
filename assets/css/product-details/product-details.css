@@ -781,10 +781,10 @@ main #main-widget .prod-tab-menu .menu__wrapper .menu__item h3 {
 main #main-widget .prod-tab-menu .menu__wrapper .menu__item p {
   font-size: 1.3em;
   line-height: 1.6em;
-  color: #76716f;
+  color: black;
 }
 main #main-widget .prod-tab-menu .menu__item .product-review-body .blog-comment {
-  background-color: #f6f7fb;
+  background-color: rgba(179, 182, 229, 0.46);
   border-radius: 15px;
   margin-top: 45px;
   padding-top: 60px;
@@ -793,7 +793,7 @@ main #main-widget .prod-tab-menu .menu__item .product-review-body .blog-comment 
   padding-bottom: 60px;
 }
 main #main-widget .prod-tab-menu .menu__item .product-review-body .blog-comment .heading {
-  margin-bottom: 60px;
+  margin-bottom: 10px;
   line-height: 24px;
   font-size: 30px;
   color: #222121;
@@ -808,18 +808,18 @@ main #main-widget .prod-tab-menu .menu__item .product-review-body .blog-comment 
   width: 100%;
 }
 main #main-widget .prod-tab-menu .menu__item .product-review-body .blog-comment .blog-comment-item .blog-comment-content {
-  width: calc(100% - 115px);
+  width: 88%;
   margin-left: 30px;
 }
-main #main-widget .prod-tab-menu .menu__item .product-review-body .blog-comment .blog-comment-item .blog-comment-content .blog-comment-content .user-name {
-  color: #333333;
+main #main-widget .prod-tab-menu .menu__item .product-review-body .blog-comment .blog-comment-item .blog-comment-content .user-name {
+  color: black;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 30px;
   line-height: 29px;
   margin-bottom: 5px;
 }
 main #main-widget .prod-tab-menu .menu__item .product-review-body .blog-comment .blog-comment-item .blog-comment-content .date {
-  color: #666666;
+  color: black;
   font-size: 14px;
   display: block;
   margin-bottom: 20px;
@@ -838,7 +838,7 @@ main #main-widget .prod-tab-menu .menu__item .product-review-body .blog-comment 
   font-size: 14px;
 }
 main #main-widget .prod-tab-menu .menu__item .product-review-body .feedback-area {
-  background-color: #f6f7fb;
+  background-color: rgba(179, 182, 229, 0.46);
   border-radius: 15px;
   margin-top: 100px;
   padding-top: 60px;
@@ -967,6 +967,32 @@ footer .footer-content .info ul li a:hover {
   color: #ff871d;
 }
 
+.scroll-top {
+  bottom: 50px;
+  cursor: pointer;
+  height: 40px;
+  position: fixed;
+  right: 20px;
+  text-align: center;
+  width: 40px;
+  z-index: 9999;
+  transition: 0.4s;
+  border-radius: 4px;
+  background-color: #e3a51e;
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+.scroll-top i {
+  line-height: 40px;
+  color: #fff;
+  font-size: 25px;
+}
+
+.scroll-top.not-visible {
+  bottom: -50px;
+  visibility: hidden;
+  opacity: 0;
+}
+
 @media only screen and (max-width: 767px) and (min-width: 350px) {
   #mobil-navbar .search-box {
     margin-left: 16px;
@@ -986,6 +1012,30 @@ footer .footer-content .info ul li a:hover {
   }
   #main-widget {
     margin-top: 22px;
+  }
+  #main-widget .menu__wrapper {
+    padding: 0 !important;
+  }
+  #main-widget .product-review-body .blog-comment {
+    padding: 15px 0 0 18px !important;
+  }
+  #main-widget .product-review-body .blog-comment .heading {
+    margin-bottom: 30px !important;
+  }
+  #main-widget .product-review-body .blog-comment .blog-comment-item {
+    display: block !important;
+  }
+  #main-widget .product-review-body .blog-comment .blog-comment-item .blog-comment-content {
+    width: auto !important;
+    margin-left: auto !important;
+  }
+  #main-widget .product-review-body .blog-comment .blog-comment-item .blog-comment-content .user-name {
+    font-size: 24px !important;
+  }
+  #main-widget .product-review-body .blog-comment .blog-comment-item .blog-comment-content .user-comment {
+    line-height: 27px !important;
+    font-size: 17px !important;
+    padding-bottom: 24px;
   }
   .footer-content {
     margin-top: auto !important;

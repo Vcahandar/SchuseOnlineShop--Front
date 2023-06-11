@@ -476,6 +476,32 @@ footer .footer-content .info ul li a:hover {
   color: #ff871d;
 }
 
+.scroll-top {
+  bottom: 50px;
+  cursor: pointer;
+  height: 40px;
+  position: fixed;
+  right: 20px;
+  text-align: center;
+  width: 40px;
+  z-index: 9999;
+  transition: 0.4s;
+  border-radius: 4px;
+  background-color: #e3a51e;
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+.scroll-top i {
+  line-height: 40px;
+  color: #fff;
+  font-size: 25px;
+}
+
+.scroll-top.not-visible {
+  bottom: -50px;
+  visibility: hidden;
+  opacity: 0;
+}
+
 @media only screen and (max-width: 1200px) and (min-width: 768px) {
   #mobil-navbar .mobil-down-navbar {
     margin-right: 15px;
