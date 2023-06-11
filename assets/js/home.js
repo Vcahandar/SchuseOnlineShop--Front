@@ -110,19 +110,19 @@ $(document).ready(function () {
 
 
   //Bir-başa headerə qaytarn icon
-	// scroll to top
-	$(window).on('scroll', function () {
-		if ($(this).scrollTop() > 600) {
-			$('.scroll-top').removeClass('not-visible');
-		} else {
-			$('.scroll-top').addClass('not-visible');
-		}
-	});
-	$('.scroll-top').on('click', function (event) {
-		$('html,body').animate({
-			scrollTop: 0
-		}, 1000);
-	});
+  // scroll to top
+  $(window).on('scroll', function () {
+    if ($(this).scrollTop() > 600) {
+      $('.scroll-top').removeClass('not-visible');
+    } else {
+      $('.scroll-top').addClass('not-visible');
+    }
+  });
+  $('.scroll-top').on('click', function (event) {
+    $('html,body').animate({
+      scrollTop: 0
+    }, 1000);
+  });
 });
 
 
@@ -202,7 +202,7 @@ $(document).ready(function () {
   });
 });
 
-$(function(){
+$(function () {
   "use strict";
 
   // Sticky menu 
@@ -231,7 +231,7 @@ let overlay = document.querySelector(".overlay");
 
 icon.onclick = function () {
   var sidebar = document.querySelector(".content-area");
-  sidebar.style.width = "80%";  
+  sidebar.style.width = "80%";
   sidebar.style.visibility = "visible";
   sidebar.style.opacity = "1";
 };
@@ -242,3 +242,30 @@ iconx.onclick = function () {
   sidebar.style.visibility = "hidden";
   sidebar.style.opacity = "0";
 };
+
+
+
+
+//----------icon-whislist-start------------
+
+let bookIcons = document.querySelectorAll(" .card .product-hover .fa-bookmark")
+
+
+bookIcons.forEach(icons => {
+  icons.addEventListener("click", function () {
+ if (icons.classList.contains("fa-regular")) {
+  icons.classList.remove("fa-regular");
+  icons.classList.add("fa-solid");
+ }else{
+  icons.classList.remove("fa-solid");
+  icons.classList.add("fa-regular");
+ }
+
+    
+  })
+
+  
+});
+
+
+
