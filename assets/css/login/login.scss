@@ -502,7 +502,7 @@ header {
 }
 
 
-main{
+main {
 
     #top-column-content {
         height: 134px;
@@ -550,8 +550,9 @@ main{
         }
     }
 
-    #login-page{
+    #login-page {
         font-family: 'Poppins', sans-serif;
+
         .account-block {
             padding: 0;
             background-image: url("../../img/login/jordan1.jpg");
@@ -585,27 +586,36 @@ main{
             }
         }
 
-        .login-title{
+        .login-title {
             font-weight: 600;
         }
 
-        .text-muted{
+        .text-muted {
             font-weight: 600;
         }
-        
-        
-        
+
+
+
         .text-theme {
             color: #5369f8 !important;
             font-size: 23px;
             font-weight: 600;
         }
-        
+
         .btn-theme {
             background-color: #5369f8;
             border-color: #5369f8;
             color: #fff;
             outline: none;
+        }
+
+        .eyes {
+            cursor: pointer;
+            color: royalblue;
+            left: 73%;
+            font-size: 18px;
+            position: relative;
+            top: 34px;
         }
     }
 
@@ -709,14 +719,36 @@ footer {
         line-height: 40px;
         color: #fff;
         font-size: 25px;
-      }
-  }
-  
-  .scroll-top.not-visible {
+    }
+}
+
+.scroll-top.not-visible {
     bottom: -50px;
     visibility: hidden;
     opacity: 0;
-  }
+}
+
+
+
+
+@media only screen and (max-width: 767px) and (min-width: 350px) {
+
+    #login-page {
+
+        .password-input {
+    
+            .eyes{
+    
+                left: 67% !important;
+    
+            }
+        }
+    }
+
+}
+
+
+
 
 
 @media only screen and (max-width: 1200px) and (min-width: 768px) {
@@ -735,15 +767,15 @@ footer {
             justify-content: space-between;
             display: flex;
 
-       
 
-            .search-mob-icon{
+
+            .search-mob-icon {
                 justify-content: flex-end;
 
-                .search-box{
+                .search-box {
                     display: block !important;
 
-                    input{
+                    input {
                         width: 160px !important;
                     }
                 }
@@ -755,16 +787,26 @@ footer {
 
     }
 
-    .footer-content{
-    
+    .footer-content {
+
         padding-bottom: 67% !important;
 
-        .info{
+        .info {
             margin-top: auto !important;
         }
 
     }
- 
 
- 
- }
+    #login-page {
+
+        .password-input {
+    
+            .eyes{
+    
+                left: 83% !important;
+    
+            }
+        }
+    }
+
+}

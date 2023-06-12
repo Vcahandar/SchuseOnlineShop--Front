@@ -1477,14 +1477,14 @@ footer {
         line-height: 40px;
         color: #fff;
         font-size: 25px;
-      }
-  }
-  
-  .scroll-top.not-visible {
+    }
+}
+
+.scroll-top.not-visible {
     bottom: -50px;
     visibility: hidden;
     opacity: 0;
-  }
+}
 
 
 
@@ -1505,15 +1505,15 @@ footer {
             justify-content: space-between;
             display: flex;
 
-       
 
-            .search-mob-icon{
+
+            .search-mob-icon {
                 justify-content: flex-end;
 
-                .search-box{
+                .search-box {
                     display: block !important;
 
-                    input{
+                    input {
                         width: 160px !important;
                     }
                 }
@@ -1524,10 +1524,10 @@ footer {
 
 
     }
- 
 
- 
- }
+
+
+}
 
 
 
@@ -1611,11 +1611,11 @@ footer {
     }
 
 
-    .footer-content{
-    
+    .footer-content {
+
         padding-bottom: 67% !important;
 
-        .info{
+        .info {
             margin-top: auto !important;
         }
 

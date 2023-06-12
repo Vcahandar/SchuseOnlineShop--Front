@@ -5,7 +5,7 @@ let overlay = document.querySelector(".overlay");
 
 icon.onclick = function () {
   var sidebar = document.querySelector(".content-area");
-  sidebar.style.width = "80%";  
+  sidebar.style.width = "80%";
   sidebar.style.visibility = "visible";
   sidebar.style.opacity = "1";
 };
@@ -40,7 +40,7 @@ $(document).ready(function () {
 
 //Sticky--menu 
 
-$(function(){
+$(function () {
   "use strict";
 
   // Sticky menu 
@@ -56,3 +56,23 @@ $(function(){
 
 
 })
+
+
+const togglePassword = document.querySelector("#login-page .password-input .eyes");
+const password = document.querySelector("#login-page .password-input input");
+
+
+togglePassword.addEventListener("click", function () {
+  // toggle the type attribute
+  const type = password.getAttribute("type") === "password" ? "text" : "password";
+  password.setAttribute("type", type);
+
+  // // toggle the icon
+  this.classList.toggle("fa-eye");
+});
+
+// prevent form submit
+const form = document.querySelector("form");
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+});

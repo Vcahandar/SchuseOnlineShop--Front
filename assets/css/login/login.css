@@ -424,6 +424,14 @@ main #login-page .btn-theme {
   color: #fff;
   outline: none;
 }
+main #login-page .eyes {
+  cursor: pointer;
+  color: royalblue;
+  left: 73%;
+  font-size: 18px;
+  position: relative;
+  top: 34px;
+}
 
 footer .container {
   max-width: 100% !important;
@@ -502,6 +510,11 @@ footer .footer-content .info ul li a:hover {
   opacity: 0;
 }
 
+@media only screen and (max-width: 767px) and (min-width: 350px) {
+  #login-page .password-input .eyes {
+    left: 67% !important;
+  }
+}
 @media only screen and (max-width: 1200px) and (min-width: 768px) {
   #mobil-navbar .mobil-down-navbar {
     margin-right: 15px;
@@ -527,5 +540,8 @@ footer .footer-content .info ul li a:hover {
   }
   .footer-content .info {
     margin-top: auto !important;
+  }
+  #login-page .password-input .eyes {
+    left: 83% !important;
   }
 }/*# sourceMappingURL=login.css.map */
